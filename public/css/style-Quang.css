@@ -1,0 +1,62 @@
+.border-color{
+    border-color:#eeee;
+    border-width:3px;
+    border-style:solid;
+}
+.banner-picture{
+    max-height: 270px;
+    position:relative;
+}
+.p-font{
+    font-family:Verdana;
+}
+.p-size{
+    font-size: 15px;
+}
+.discount-price{
+    font-size: 13px;
+    color : #999
+}
+.price{
+    color: #dec18c
+}
+
+.thumb{
+    position: relative;
+    /* Các thuộc tính khác của .thumb1 nếu có */
+}
+.product-flash-wrap {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.on-new {
+    background-color: #c5cda0;
+}
+.on-sale{
+    background-color: #b1d1c9;
+}
+.on-hot{
+    background-color: #fdb3a6;
+}
+.on-sold{
+    background-color: #dec18c;
+}
+
+.product-flash {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+}
+.product-flash+.product-flash{
+    margin-top: 5px;
+}
+
+

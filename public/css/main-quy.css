@@ -93,12 +93,14 @@
     color: #dec18c;
     padding-right: 15px;
 }
+
 .my-account,
 .wishlist,
 .blog,
-.login{
+.login {
     padding-right: 15px;
 }
+
 .nav-menu a:hover {
     color: #dec18c;
 }
@@ -134,23 +136,21 @@
 .icon-header {
     display: flex;
 }
+
 .icon-header a {
-    color:#dec18c;
+    color: #dec18c;
 }
+
 .search-table {
     align-items: center;
     display: flex;
 }
-.search .dropdown-menu{
+
+.search .dropdown-menu {
     display: none;
 }
 
-.search .dropdown-menu li
-
-.search:hover .dropdown-menu
-
-
-.search.dropdown {
+.search .dropdown-menu li .search:hover .dropdown-menu .search.dropdown {
     text-align: center;
 }
 
@@ -168,43 +168,45 @@
     transform: translateX(-50%);
 }
 
-.search.dropdown a ul li{
+.search.dropdown a ul li {
     display: block;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.search:hover .dropdown-menu{
+.search:hover .dropdown-menu {
     display: block;
 }
-.logo img{
+
+.logo img {
     max-height: 134px;
     padding-top: 25px;
-    padding-bottom:25px ;
+    padding-bottom: 25px;
 }
-.header-bottom{
+
+.header-bottom {
     font-family: "Varela Round";
     display: flex;
 }
 
-.header-bottom .bomttom-menu-left > ul {
+.header-bottom .bomttom-menu-left>ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.header-bottom .bomttom-menu-left > ul > li {
+.header-bottom .bomttom-menu-left>ul>li {
     margin-right: 20px;
 }
 
-.header-bottom .bomttom-menu-left > ul > li > a {
+.header-bottom .bomttom-menu-left>ul>li>a {
     text-decoration: none;
     color: #878787;
     transition: color 0.2s ease;
 }
 
-.header-bottom .bomttom-menu-left > ul > li > a:hover {
+.header-bottom .bomttom-menu-left>ul>li>a:hover {
     color: #dec18c;
 }
 
@@ -235,7 +237,7 @@
 .dropdown5:hover .dropdown-menu5 li ul,
 .dropdown5:hover .dropdown-menu5 li ul li {
     display: block;
-    
+
 }
 
 .dropdown-menu1,
@@ -256,36 +258,44 @@
 .dropdown5:hover .dropdown-menu5 {
     opacity: 1;
 }
-.dropdown-menu2{
+
+.dropdown-menu2 {
     display: flex;
 }
-.header-bottom{
+
+.header-bottom {
     font-family: "Varela Round";
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-bottom a{
+
+.header-bottom a {
     text-decoration: none;
-    color: #878787;    
+    color: #878787;
 }
-.header-bottom  a:hover{
+
+.header-bottom a:hover {
     color: #dec18c;
 }
-.header-bottom .bomttom-menu-left > ul,
-.header-bottom .bomttom-menu-left > ul ul {
+
+.header-bottom .bomttom-menu-left>ul,
+.header-bottom .bomttom-menu-left>ul ul {
     padding: 0;
     margin: 0;
 }
-.bottom-menu{
-    display:flex;
-    align-items: center;
-}
-.bottom-menu-right{
+
+.bottom-menu {
     display: flex;
     align-items: center;
-    margin-left:auto;
 }
+
+.bottom-menu-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
 .bomttom-menu-left {
     margin-right: auto;
 }
@@ -302,13 +312,26 @@
 .twitter a,
 .facebook a,
 .vimeo a,
-.pinterest a{
+.pinterest a {
     color: #dec18c;
-}    
+}
+
 .twitter a:hover,
 .facebook a:hover,
 .vimeo a:hover,
-.pinterest a:hover{
+.pinterest a:hover {
     color: #878787;
 }
 
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.thumb:hover img {
+    transform: scale(1.1);
+}

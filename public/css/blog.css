@@ -1,3 +1,4 @@
+
 .language-currency {
     display: flex;
     align-items: center;
@@ -558,23 +559,13 @@ article {
     margin-top: 5px;
     font-size: 14px;
 }
-
 .widget_posts_item {
-    margin-bottom: 25px;
+    margin-bottom: 25px; 
 }
-
 .widget-posts-content-wrap a {
     text-decoration: none;
     color: #000000;
 }
-
 .entry-content-wrap {
-    width: 100%;
-}
-
-#navbarNav a {
-    color: #dec18c;
-}
-.icon-mobile i{
-    color: #dec18c;
+    width: 100%; 
 }

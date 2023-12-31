@@ -216,3 +216,9 @@
 .bottom-menu-center{
     background-color: #fff;
 }
+#navbarNav a {
+    color: #dec18c;
+}
+.icon-mobile i{
+    color: #dec18c;
+}

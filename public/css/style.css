@@ -1,30 +1,36 @@
-.border-color{
-    border-color:#eeee;
-    border-width:3px;
-    border-style:solid;
+.border-color {
+    border-color: #eeee;
+    border-width: 3px;
+    border-style: solid;
 }
-.banner-picture{
+
+.banner-picture {
     max-height: 270px;
-    position:relative;
+    position: relative;
 }
-.p-font{
-    font-family:Verdana;
+
+.p-font {
+    font-family: Verdana;
 }
-.p-size{
+
+.p-size {
     font-size: 15px;
 }
-.discount-price{
+
+.discount-price {
     font-size: 13px;
-    color : #999
+    color: #999
 }
-.price{
+
+.price {
     color: #dec18c
 }
 
-.thumb{
+.thumb {
     position: relative;
     /* Các thuộc tính khác của .thumb1 nếu có */
 }
+
 .product-flash-wrap {
     position: absolute;
     top: 10px;
@@ -34,13 +40,16 @@
 .on-new {
     background-color: #c5cda0;
 }
-.on-sale{
+
+.on-sale {
     background-color: #b1d1c9;
 }
-.on-hot{
+
+.on-hot {
     background-color: #fdb3a6;
 }
-.on-sold{
+
+.on-sold {
     background-color: #dec18c;
 }
 
@@ -55,8 +64,54 @@
     text-align: center;
     border-radius: 50%;
 }
-.product-flash+.product-flash{
+
+.product-flash+.product-flash {
     margin-top: 5px;
 }
 
 
+
+
+.banner_2 {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.bg-img {
+    height: 269px;
+    background-image: url('../images/banner-31.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin-right: 15px;
+    position: relative;
+    margin-bottom:10px;
+}
+
+.border-banner_2 {
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    top: 13px;
+    left: 13px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.right-container{
+    right: 30px;
+    position: absolute;
+    max-width: 320px;
+    padding: 45px 35px;
+    background-color: #fff;
+    top: 30px;
+    bottom: 30px;
+    opacity: .98;
+}
+
+.ff{
+    font-family: "Varela Round"
+}
+.fs-32{
+    font-size: 32px;
+}

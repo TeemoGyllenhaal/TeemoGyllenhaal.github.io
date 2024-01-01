@@ -326,8 +326,12 @@
 .breadcrumbs {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
 }
-
+.widget-posts-thumbnail{
+    padding-bottom: 20px;
+}
 .home {
     list-style: none;
     display: flex;
@@ -472,11 +476,6 @@
     display: flex;
 }
 
-.article {
-    display: flex;
-
-}
-
 p {
     font-weight: 400;
 }
@@ -488,8 +487,6 @@ p {
 
 article {
     display: flex;
-    align-items: center;
-    /* Canh giữa các phần tử con theo chiều dọc */
 }
 
 .entry-thumbnail-wrap {
@@ -541,10 +538,6 @@ article {
     transform: translateX(10px);
 }
 
-.col-md-3 aside {
-    margin-bottom: 50px;
-}
-
 .widget-posts-thumbnail {
     display: flex;
     align-items: center;
@@ -577,4 +570,12 @@ article {
 }
 .icon-mobile i{
     color: #dec18c;
+}
+.col-md-3 aside{
+    margin-bottom: 60px;
+}
+.entry-meta-author,
+.entry-meta-date,
+.entry-meta-comment{
+    margin-right: 10px;
 }

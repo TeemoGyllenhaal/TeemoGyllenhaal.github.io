@@ -1,3 +1,4 @@
+
 .language-currency {
     display: flex;
     align-items: center;
@@ -108,74 +109,11 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.search-content {
-    position: relative;
-}
-
-.search-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 16px;
-}
-
-.search-content input[type="text"] {
-    width: 500px;
-    height: auto;
-    padding: 10px 60px 10px 25px;
-    margin: 0;
-    background-color: #fff;
-    font-size: 16px;
-    font-family: "Varela Round";
-}
-
 .icon-header {
     display: flex;
 }
 .icon-header a {
     color:#dec18c;
-}
-.search-table {
-    align-items: center;
-    display: flex;
-}
-.search .dropdown-menu{
-    display: none;
-}
-
-.search .dropdown-menu li
-
-.search:hover .dropdown-menu
-
-
-.search.dropdown {
-    text-align: center;
-}
-
-.search.dropdown a ul {
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    list-style: none;
-    padding: 10px;
-    width: 100px;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.search.dropdown a ul li{
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.search:hover .dropdown-menu{
-    display: block;
 }
 .logo img{
     max-height: 134px;
@@ -208,57 +146,6 @@
     color: #dec18c;
 }
 
-.dropdown-menu1 li ul li,
-.dropdown-menu4 li,
-.dropdown-menu4 li ul li,
-.dropdown-menu5 li ul li {
-    display: none;
-    padding: 5px;
-    /* padding: 5px 8px; */
-}
-
-.dropdown-menu2 li,
-.dropdown-menu2 li ul li {
-    display: none;
-}
-
-.dropdown1:hover .dropdown-menu1 li,
-.dropdown1:hover .dropdown-menu1 li ul,
-.dropdown1:hover .dropdown-menu1 li ul li,
-.dropdown2:hover .dropdown-menu2 li,
-.dropdown2:hover .dropdown-menu2 li ul,
-.dropdown2:hover .dropdown-menu2 li ul li,
-.dropdown4:hover .dropdown-menu4 li,
-.dropdown4:hover .dropdown-menu4 li ul,
-.dropdown4:hover .dropdown-menu4 li ul li,
-.dropdown5:hover .dropdown-menu5 li,
-.dropdown5:hover .dropdown-menu5 li ul,
-.dropdown5:hover .dropdown-menu5 li ul li {
-    display: block;
-    
-}
-
-.dropdown-menu1,
-.dropdown-menu2,
-.dropdown-menu4,
-.dropdown-menu5 {
-    padding: 10px;
-    position: absolute;
-    background-color: #fff;
-    opacity: 0;
-    transition: opacity 1s ease;
-    z-index: 100;
-}
-
-.dropdown1:hover .dropdown-menu1,
-.dropdown2:hover .dropdown-menu2,
-.dropdown4:hover .dropdown-menu4,
-.dropdown5:hover .dropdown-menu5 {
-    opacity: 1;
-}
-.dropdown-menu2{
-    display: flex;
-}
 .header-bottom{
     font-family: "Varela Round";
     display: flex;
@@ -314,6 +201,8 @@
 .breadcrumbs {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .home,
@@ -354,10 +243,10 @@
 .login .form-signup {
     width: 49%; /* Điều chỉnh độ rộng của form-signup */
 }
-.login input[type="text"],
-.login input[type="password"],
-.form-signup input[type="email"],
-.form-signup input[type="password"] {
+.form-Login input[type="text"],
+.form-Login input[type="password"],
+.form-Signup input[type="email"],
+.form-Signup input[type="password"] {
     width: 100%;
     padding: 10px; 
     box-sizing: border-box; 
@@ -367,30 +256,23 @@
     background-color:#EEEEEE;
     text-align: center;
 }
-.login .form-login,
-.form-signup {
-    width: 50%;
-    margin: 0 auto;
+.form-Login h2,
+.form-Signup h2 {
     text-align: center;
 }
-
-.login h2,
-.form-signup h2 {
-    text-align: center;
-}
-.login input[type="email"]:focus,
-.login input[type="password"]:focus,
-.form-signup input[type="email"]:focus,
-.form-signup input[type="password"]:focus {
+.form-Login input[type="text"]:focus,
+.form-Login input[type="password"]:focus,
+.form-Signup input[type="email"]:focus,
+.form-Signup input[type="password"]:focus {
     outline: none; 
     border: 1px solid  #dec18c;
 }
-.form-login {
-    border: 1px solid #EEEEEE; /* Màu đường viền cho border box */
-    border-radius: 10px; /* Bo tròn góc của border box */
-    background-color: #fff; /* Màu nền cho border box */
-    padding: 20px; /* Khoảng cách giữa border box và các phần tử bên trong form-login */
-    text-align: center; /* Căn giữa các phần tử bên trong form-login */
+.form-Signup,
+.form-Login {
+    border: 1px solid #EEEEEE; 
+    background-color: #fff; 
+    padding: 20px;
+    text-align: center; 
 }
 
 .page-title-inner {
@@ -400,7 +282,6 @@
 .page-title-inner h1 {
     position: absolute;
     top: 50%;
-    left: 52%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    
 }

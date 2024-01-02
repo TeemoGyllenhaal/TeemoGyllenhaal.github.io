@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/setting.css">
     <link rel="stylesheet" href="./public/css/blog.css">
+    <link rel="stylesheet" href="./public/css/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,75 +19,126 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
-
-<div class="wrapper">
-    <div class="container">
-        <header class="header">
-            <div class="header-top d-none d-lg-flex d-xl-flex ">
-                <div class="language-currency ">
-                    <div class="language dropdown">
-                        <a href="#" class="dropdown-toggle">English </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">Tiếng Việt</a></li>
-                        </ul>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header-top d-none d-lg-flex d-xl-flex ">
+                    <div class="language-currency ">
+                        <div class="language dropdown">
+                            <a href="#" class="dropdown-toggle">English </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">Tiếng Việt</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency dropdown">
+                            <a href="#" class="dropdown-toggle">USD </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">EUR</a></li>
+                                <li><a href="#">VND</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="currency dropdown">
-                        <a href="#" class="dropdown-toggle">USD </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">USD</a></li>
-                            <li><a href="#">EUR</a></li>
-                            <li><a href="#">VND</a></li>
-                        </ul>
+                    <div class="ts-menu ">
+                        <div class="text-widget">Welcome to Handmade Shop</div>
+                        <div class="nav-menu">
+                            <a href="#" class="my-account">My Account</a>
+                            <a href="#" class="wishlist">Wishlist</a>
+                            <a href="/blog.html" class="blog">Blog</a>
+                            <a href="/login.html" class="login">Login</a>
+                        </div>
                     </div>
                 </div>
-                <div class="ts-menu ">
-                    <div class="text-widget">Welcome to Handmade Shop</div>
-                    <div class="nav-menu">
-                        <a href="#" class="my-account">My Account</a>
-                        <a href="#" class="wishlist">Wishlist</a>
-                        <a href="/blog.html" class="blog">Blog</a>
-                        <a href="/login.html" class="login">Login</a>
+
+                <div class="header-bottom">
+                    <div class="bottom-menu-left">
+                        <div class="logo d-none d-lg-block">
+                            <a href="#">
+                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                    alt="logo day ne">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="bottom-menu-center">
+                        <div class="logo-mobile d-lg-none">
+                            <a href="#" class="logo-mobile">
+                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                    alt="logo day ne">
+                            </a>
+                        </div>
+
+                        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Pages</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="bottom-menu-right d-none d-lg-flex d-xl-flex">
+                        <div class="twitter">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="vimeo">
+                            <a href="#"><i class="fab fa-vimeo"></i></a>
+                        </div>
+                        <div class="pinterest">
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="header-bottom">
-                <div class="bottom-menu-left">
-                    <div class="logo d-none d-lg-block">
-                        <a href="#">
-                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
-                                alt="logo day ne">
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="bottom-menu-center">
-                    <div class="logo-mobile d-lg-none">
-                        <a href="#" class="logo-mobile">
-                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
-                                alt="logo day ne">
-                        </a>
-                    </div>
-
-                    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="mobileheader bg-dark d-flex">
+                    <nav class="navbar navbar-expand-lg bg-dark d-lg-none">
+                        <div class="container">
+                            <button class="toggler-icon" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Pages</a>
                                     </li>
-
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Blog</a>
                                     </li>
@@ -97,574 +149,733 @@
                                         <a class="nav-link" href="#">Shop</a>
                                     </li>
                                 </ul>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
                             </div>
                         </div>
                     </nav>
+                    <div class="icon ms-auto d-lg-none">
+                        <div class="icon-mobile">
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bottom-menu-right d-none d-lg-flex d-xl-flex">
-                    <div class="twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="facebook">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <div class="vimeo">
-                        <a href="#"><i class="fab fa-vimeo"></i></a>
-                    </div>
-                    <div class="pinterest">
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                    </div>
+            </header>
+
+
+
+            <div class="page-title-inner block-center">
+                <img width=100% height="281" src="public\images\banner2.jpg">
+                <div class="block-center-inner">
+                    <h1>Blog</h1>
                 </div>
             </div>
-            <div class="mobileheader bg-dark d-flex">
-                <nav class="navbar navbar-expand-lg bg-dark d-lg-none">
-                    <div class="container">
-                        <button class="toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <div class="breadcrumbs border-bottom">
+                <div class="home">
+                    <li>
+                        <a href="/home.html">Home</a><i class="fas fa-angle-right"></i>
+                    </li>
+                </div>
+                <div class="blog">
+                    <li>
+                        Blog
+                    </li>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-3 d-none d-lg-block">
+                        <aside id="g5plus-social-profile-2"
+                            class="blog-widget widget widget-social-profile text-center border-yellow p-3">
+                            <span>Get connected</span>
+                            <ul class="social-profile social-icon-bordered">
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pages</a>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook" s></i></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                <li>
+                                    <a href="#"><i class="fab fa-vimeo"></i></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Shop</a>
+                                <li>
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
                                 </li>
                             </ul>
-                        </div>
+                        </aside>
+
+                        <aside id="search-3" class="widget widget-search">
+                            <h4 class="widget title">
+                                <span>Search the blog</span>
+                            </h4>
+                            <form role="search" class="search-form ">
+                                <input type="text" placeholder="Search here...">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </aside>
+                        <aside id="Categories-3" class="widget widget-categories text-left">
+                            <h4 class="widget title">
+                                <span>Categories</span>
+                            </h4>
+                            <ul>
+                                <li class="cat-item  border-bottom">
+                                    <a href="#">Destination</a>
+                                </li>
+                                <li class="cat-item  border-bottom">
+                                    <a href="#">Food</a>
+                                </li>
+                                <li class="cat-item  border-bottom">
+                                    <a href="#">Landscape</a>
+                                </li>
+                                <li class="cat-item  border-bottom">
+                                    <a href="#">Nature</a>
+                                </li>
+                                <li class="cat-item  border-bottom">
+                                    <a href="#">Photography</a>
+                                </li>
+                                <li class="cat-item 1 border-bottom">
+                                    <a href="#">Travel</a>
+                                </li>
+                                <li class="cat-item ">
+                                    <a href="#">Uncategorized</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside id="g5plus-posts-2" class="widget widget-posts">
+                            <h4 class="widget-title">
+                                <span>
+                                    Recent Posts
+                                </span>
+                            </h4>
+                            <div class="widget-posts-wrap">
+                                <div class="widget_posts_item clearfix">
+                                    <div class="widget-posts-thumbnail border-bottom">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" class="prettyPhoto" title="I Love My Life Very Much">
+                                                <img width="70" height="70"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-01-150x150.jpg"
+                                                    alt="I Love My Life Very Much">
+                                            </a>
+                                        </div>
+                                        <div class="widget-posts-content-wrap">
+                                            <a class="widget-posts-title" href="#" rel="bookmark"
+                                                title="I Love My Life Very Much">I love My Life Very Much</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="widget_posts_item clearfix ">
+                                    <div class="widget-posts-thumbnail border-bottom">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" class="prettyPhoto"
+                                                title="Here Are Many Variations Of Passages">
+                                                <img width="70" height="70"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-150x150.jpg"
+                                                    alt="Here Are Many Variations Of Passages">
+                                            </a>
+                                        </div>
+                                        <div class="widget-posts-content-wrap">
+                                            <a class="widget-posts-title" href="#" rel="bookmark"
+                                                title="Here Are Many Variations Of Passages">Here Are Many Variations Of
+                                                Passages</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="widget_posts_item clearfix">
+                                    <div class="widget-posts-thumbnail">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" class="prettyPhoto" title="Inteligent Transitions In Ux Design">
+                                                <img width="70" height="70  "
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-03-150x150.jpg"
+                                                    alt="Inteligent Transitions In Ux Design">
+                                            </a>
+                                        </div>
+                                        <div class="widget-posts-content-wrap">
+                                            <a class="widget-posts-title" href="#" rel="bookmark"
+                                                title="Inteligent Transitions In Ux Design">Inteligent Transitions In Ux
+                                                Design</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
                     </div>
-                </nav>
-                <div class="icon ms-auto d-lg-none">
-                    <div class="icon-mobile">
-                        <a href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-        </header>
-
-
-
-        <div class="page-title-inner block-center">
-            <img width=100% height="281" src="public\images\banner2.jpg">
-            <div class="block-center-inner">
-                <h1>Blog</h1>
-            </div>
-        </div>
-        <div class="breadcrumbs border-bottom">
-            <div class="home">
-                <li>
-                    <a href="/home.html">Home</a><i class="fas fa-angle-right"></i>
-                </li>
-            </div>
-            <div class="blog">
-                <li>
-                    Blog
-                </li>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row clearfix">
-                <div class="col-md-3 d-none d-lg-block">
-                    <aside id="g5plus-social-profile-2"
-                        class="blog-widget widget widget-social-profile text-center border-yellow p-3">
-                        <span>Get connected</span>
-                        <ul class="social-profile social-icon-bordered">
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-facebook" s></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-vimeo"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                            </li>
-                        </ul>
-                    </aside>
-
-                    <aside id="search-3" class="widget widget-search">
-                        <h4 class="widget title">
-                            <span>Search the blog</span>
-                        </h4>
-                        <form role="search" class="search-form ">
-                            <input type="text" placeholder="Search here...">
-                            <button type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </form>
-                    </aside>
-                    <aside id="Categories-3" class="widget widget-categories text-left">
-                        <h4 class="widget title">
-                            <span>Categories</span>
-                        </h4>
-                        <ul>
-                            <li class="cat-item  border-bottom">
-                                <a href="#">Destination</a>
-                            </li>
-                            <li class="cat-item  border-bottom">
-                                <a href="#">Food</a>
-                            </li>
-                            <li class="cat-item  border-bottom">
-                                <a href="#">Landscape</a>
-                            </li>
-                            <li class="cat-item  border-bottom">
-                                <a href="#">Nature</a>
-                            </li>
-                            <li class="cat-item  border-bottom">
-                                <a href="#">Photography</a>
-                            </li>
-                            <li class="cat-item 1 border-bottom">
-                                <a href="#">Travel</a>
-                            </li>
-                            <li class="cat-item ">
-                                <a href="#">Uncategorized</a>
-                            </li>
-                        </ul>
-                    </aside>
-                    <aside id="g5plus-posts-2" class="widget widget-posts">
-                        <h4 class="widget-title">
-                            <span>
-                                Recent Posts
-                            </span>
-                        </h4>
-                        <div class="widget-posts-wrap">
-                            <div class="widget_posts_item clearfix">
-                                <div class="widget-posts-thumbnail border-bottom">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" class="prettyPhoto" title="I Love My Life Very Much">
-                                            <img width="70" height="70"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-01-150x150.jpg"
-                                                alt="I Love My Life Very Much">
-                                        </a>
-                                    </div>
-                                    <div class="widget-posts-content-wrap">
-                                        <a class="widget-posts-title" href="#" rel="bookmark"
-                                            title="I Love My Life Very Much">I love My Life Very Much</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="widget_posts_item clearfix ">
-                                <div class="widget-posts-thumbnail border-bottom">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" class="prettyPhoto" title="Here Are Many Variations Of Passages">
-                                            <img width="70" height="70"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-150x150.jpg"
-                                                alt="Here Are Many Variations Of Passages">
-                                        </a>
-                                    </div>
-                                    <div class="widget-posts-content-wrap">
-                                        <a class="widget-posts-title" href="#" rel="bookmark"
-                                            title="Here Are Many Variations Of Passages">Here Are Many Variations Of
-                                            Passages</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="widget_posts_item clearfix">
-                                <div class="widget-posts-thumbnail">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" class="prettyPhoto" title="Inteligent Transitions In Ux Design">
-                                            <img width="70" height="70  "
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-03-150x150.jpg"
-                                                alt="Inteligent Transitions In Ux Design">
-                                        </a>
-                                    </div>
-                                    <div class="widget-posts-content-wrap">
-                                        <a class="widget-posts-title" href="#" rel="bookmark"
-                                            title="Inteligent Transitions In Ux Design">Inteligent Transitions In Ux
-                                            Design</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-                <div class="site-content-archive-inner col-md-9">
-                    <div class="blog-wrap layout-container medium-image">
-                        <div class="blog-inner clearfix blog-style-medium-image blog-paging-default">
-                            <article id="post-2761"
-                                class="clearfix post-2761 post type-post status-publish format-video hentry category-uncategorized post_format-post-format-video">
-                                <div class="entry-thumbnail-wrap">
-                                    <div
-                                        class="embed-responsive embed-responsive-16by9 embed-responsive-blog-medium-image">
-                                        <iframe width="400" height="267"
-                                            src="https://www.youtube.com/embed/mcixldqDIEQ?feature=oembed"
-                                            frameborder="0">
-                                        </iframe>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap d-none d-md-block">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Video Post">Video Post</a>
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
-                                            </div>
+                    <div class="site-content-archive-inner col-md-9">
+                        <div class="blog-wrap layout-container medium-image">
+                            <div class="blog-inner clearfix blog-style-medium-image blog-paging-default">
+                                <article id="post-2761"
+                                    class="clearfix post-2761 post type-post status-publish format-video hentry category-uncategorized post_format-post-format-video">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div
+                                            class="embed-responsive embed-responsive-16by9 embed-responsive-blog-medium-image">
+                                            <iframe width="400" height="267"
+                                                src="https://www.youtube.com/embed/mcixldqDIEQ?feature=oembed"
+                                                frameborder="0">
+                                            </iframe>
                                         </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate
-                                            clients
-                                            corder a publication to be made and presented with the actual content
-                                            still
-                                            not being ready. Think of a news blog that’s filled with content hourly
-                                            on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View
-                                                more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article id="post-447"
-                                class="clearfix post-447 post type-post status-publish format-standard has-post-thumbnail hentry category-food category-nature tag-destination tag-nature">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="I love my life very much" class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-01-400x267.jpg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="I love my life very much">I love my life very
-                                            much</a>
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                    <div class="entry-content-wrap d-none d-md-block">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Video Post">Video Post</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
+                                </article>
+                                <article id="post-447"
+                                    class="clearfix post-447 post type-post status-publish format-standard has-post-thumbnail hentry category-food category-nature tag-destination tag-nature">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="I love my life very much"
+                                                class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-01-400x267.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article id="post-445"
-                                class="clearfix post-445 post type-post status-publish format-standard has-post-thumbnail hentry category-destination category-photography tag-destination tag-nature">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="Here Are Many Variations Of Passages"
-                                            class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-400x267.jpg">
-                                        </a>
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="I love my life very much">I love my life
+                                                very
+                                                much</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Here Are Many
+                                </article>
+                                <article id="post-445"
+                                    class="clearfix post-445 post type-post status-publish format-standard has-post-thumbnail hentry category-destination category-photography tag-destination tag-nature">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="Here Are Many Variations Of Passages"
+                                                class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-400x267.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Here Are Many
                                         Variations Of Passages"></a>Here Are Many
-                                        Variations Of Passages
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article id="post-435"
-                                class="clearfix post-435 post type-post status-publish format-standard has-post-thumbnail hentry category-landscape category-travel tag-destination tag-nature tag-travel">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="Inteligent Transitions In Ux Design"
-                                            class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-03-400x267.jpg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark"
-                                            title="Inteligent Transitions In Ux Design"></a>Inteligent Transitions In Ux
-                                        Design
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                            Variations Of Passages
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
+                                </article>
+                                <article id="post-435"
+                                    class="clearfix post-435 post type-post status-publish format-standard has-post-thumbnail hentry category-landscape category-travel tag-destination tag-nature tag-travel">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="Inteligent Transitions In Ux Design"
+                                                class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-03-400x267.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article id="post-136"
-                                class="clearfix post-136 post type-post status-publish format-standard has-post-thumbnail hentry category-destination category-nature tag-destination tag-nature">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="Standard Post Example" class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/07/news-04-400x267.jpg">
-                                        </a>
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark"
+                                                title="Inteligent Transitions In Ux Design"></a>Inteligent Transitions
+                                            In Ux
+                                            Design
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Standard Post Example"></a>Standard Post
-                                        Example
+                                </article>
+                                <article id="post-136"
+                                    class="clearfix post-136 post type-post status-publish format-standard has-post-thumbnail hentry category-destination category-nature tag-destination tag-nature">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="Standard Post Example" class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/07/news-04-400x267.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Standard Post Example"></a>Standard Post
+                                            Example
 
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
+                                </article>
+                                <article id="post-417"
+                                    class="clearfix post-417 post type-post status-publish format-image has-post-thumbnail hentry category-food category-landscape tag-destination tag-food tag-landscape tag-nature post_format-post-format-image">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="Image Post Example" class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/06/news-05-400x267.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article id="post-417"
-                                class="clearfix post-417 post type-post status-publish format-image has-post-thumbnail hentry category-food category-landscape tag-destination tag-food tag-landscape tag-nature post_format-post-format-image">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="Image Post Example" class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/06/news-05-400x267.jpg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Image Post Example
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Image Post Example
                                         "></a>Image Post Example
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
+                                </article>
+                                <article id="post-421"
+                                    class="clearfix post-421 post type-post status-publish format-gallery has-post-thumbnail hentry category-photography category-travel tag-destination tag-gallery tag-nature tag-travel post_format-post-format-gallery">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div class="entry-thumbnail">
+                                            <a href="#" title="Gallery Post Example" class="entry-thumbnail_overlay">
+                                                <img width="400" height="267" class="img-responsive"
+                                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/05/news-06-400x267.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article id="post-421"
-                                class="clearfix post-421 post type-post status-publish format-gallery has-post-thumbnail hentry category-photography category-travel tag-destination tag-gallery tag-nature tag-travel post_format-post-format-gallery">
-                                <div class="entry-thumbnail-wrap">
-                                    <div class="entry-thumbnail">
-                                        <a href="#" title="Gallery Post Example" class="entry-thumbnail_overlay">
-                                            <img width="400" height="267" class="img-responsive"
-                                                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/05/news-06-400x267.jpg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Gallery Post Example
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Gallery Post Example
                                         "></a>Gallery Post Example
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
+                                </article>
+                                <article id="post-426"
+                                    class="clearfix post-426 post type-post status-publish format-video has-post-thumbnail hentry category-destination category-travel tag-destination tag-nature tag-video post_format-post-format-video">
+                                    <div class="entry-thumbnail-wrap">
+                                        <div
+                                            class="embed-responsive embed-responsive-16by9 embed-responsive-blog-medium-image">
+                                            <iframe width="400" height="267"
+                                                src="https://www.youtube.com/embed/wbLnMlPGu34?si=vGk1shhNq4xIh6Nu"
+                                                title="Amazing Youtube Video Post" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                            <article id="post-426"
-                                class="clearfix post-426 post type-post status-publish format-video has-post-thumbnail hentry category-destination category-travel tag-destination tag-nature tag-video post_format-post-format-video">
-                                <div class="entry-thumbnail-wrap">
-                                    <div
-                                        class="embed-responsive embed-responsive-16by9 embed-responsive-blog-medium-image">
-                                        <iframe width="400" height="267"
-                                            src="https://www.youtube.com/embed/wbLnMlPGu34?si=vGk1shhNq4xIh6Nu"
-                                            title="Amazing Youtube Video Post" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <h3 class="entry-title p-font">
-                                        <a href="#" rel="bookmark" title="Amazing Youtube Video Post
+                                    <div class="entry-content-wrap">
+                                        <h3 class="entry-title p-font">
+                                            <a href="#" rel="bookmark" title="Amazing Youtube Video Post
                                         "></a>Amazing Youtube Video Post
-                                    </h3>
-                                    <div class="entry-post-meta-wrap">
-                                        <div class="entry-meta">
-                                            <div class="entry-meta-author">
-                                                <i class="fas fa-users"></i>
-                                                <a href="#">g5plusacc</a>
-                                            </div>
-                                            <div class="entry-meta-date">
-                                                <i class="fas fa-clock"></i>
-                                                <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
-                                            </div>
-                                            <div class="entry-meta-comment">
-                                                <i class="far fa-message"></i>
-                                                <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                        </h3>
+                                        <div class="entry-post-meta-wrap">
+                                            <div class="entry-meta">
+                                                <div class="entry-meta-author">
+                                                    <i class="fas fa-users"></i>
+                                                    <a href="#">g5plusacc</a>
+                                                </div>
+                                                <div class="entry-meta-date">
+                                                    <i class="fas fa-clock"></i>
+                                                    <a href="#" rel="bookmark" title="Video Post">August 2, 2015</a>
+                                                </div>
+                                                <div class="entry-meta-comment">
+                                                    <i class="far fa-message"></i>
+                                                    <a href="#" rel="bookmark" title="caterory tag">0 Comment</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="entry-excerpt">
+                                            <p>In a professional context it often happens that private or corporate
+                                                clients
+                                                corder a publication to be made and presented with the actual content
+                                                still
+                                                not being ready. Think of a news blog that’s filled with content hourly
+                                                on
+                                                the day of going live. However, reviewers tend to be distracted by
+                                                comprehensible content, say, a…
+                                                <a class="read-more p-color" rel="bookmark" title="Video Post">View
+                                                    more</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="entry-excerpt">
-                                        <p>In a professional context it often happens that private or corporate clients
-                                            corder a publication to be made and presented with the actual content still
-                                            not being ready. Think of a news blog that’s filled with content hourly on
-                                            the day of going live. However, reviewers tend to be distracted by
-                                            comprehensible content, say, a…
-                                            <a class="read-more p-color" rel="bookmark" title="Video Post">View more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</div>
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <footer class="main-footer-wrapper light">
+            <div class="container">
+                <div class="footer-top-bar-wrapper">
+                    <div class="container text-center">
+                        <div class="row m-3 p-5 ">
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <!-- Căn giữa cả theo chiều ngang và dọc -->
+                                <a href="#" title="Partner 1">
+                                    <img src="/public/images/partner-1.jpg" alt="Partner 1" width="150px">
+                                </a>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <!-- Căn giữa cả theo chiều ngang và dọc -->
+                                <a href="#" title="Partner 1">
+                                    <img src="/public/images/partner-2.jpg" alt="Partner 1" width="110px">
+                                </a>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <!-- Căn giữa cả theo chiều ngang và dọc -->
+                                <a href="#" title="Partner 1">
+                                    <img src="/public/images/partner-3.jpg" alt="Partner 1" width="110px">
+                                </a>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <!-- Căn giữa cả theo chiều ngang và dọc -->
+                                <a href="#" title="Partner 1">
+                                    <img src="/public/images/partner-4.jpg" alt="Partner 1" width="150px">
+                                </a>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <!-- Căn giữa cả theo chiều ngang và dọc -->
+                                <a href="#" title="Partner 1">
+                                    <img src="/public/images/partner-5.jpg" alt="Partner 1" width="110px">
+                                </a>
+                            </div>
+                            <!-- <div class="col d-flex align-items-center justify-content-center">
+        
+                        <a href="#" title="Partner 1">
+                            <img src="/partner-2 (1).jpg" alt="Partner 1" width="110px">
+                        </a>
+                    </div> -->
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="container-fluid text-center main" id="section1">
+                            <div class="row alight-iteam-center">
+                                <div class="col text-end  border-end khoi p-4">
+                                    <a href="#" id="scrollToSection2"><span> <i class="fas fa-location-dot"></i> SEE
+                                            MAP</span></a>
+                                </div>
+                                <div class="col text-start border-start khoi p-4">
+                                    <span> <i class="fa-solid fa-circle-arrow-up "></i><a href="#"></a> SCROLL UP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main" id="section2">
+                            <h2>. </h2>
+                            <!-- Content of Section 2 goes here -->
+                            <a href="#section1"></a>
+                        </div>
+                    </div>
+                    <script>
+                        document.getElementById('scrollToSection2').addEventListener('click', function (event) {
+                            event.preventDefault();
+
+                            // Hiển thị Section 2
+                            document.getElementById('section2').style.display = 'block';
+
+                            // Cuộn mượt xuống Section 2
+                            document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+                        });
+                    </script>
+                    <div class="container-fluid text-start">
+                        <div class="row align-items-center m-3 p-5">
+                            <div class="col">
+                                <div class="footer-logo ">
+                                    <a href="#">
+                                        <img class="footer-logo-img" src="/public/images/logo.png">
+                                    </a>
+                                    <div class="text-logo">
+                                        Letterpress, gold foil stamping, and more. Quality, sustainable materials like
+                                        thick 100% PCW paper
+                                        and
+                                        veg-based inks.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="widget widget_nav_menu p-5">
+                                    <h2 class="widget-title m-4 ">
+                                        Imformation
+                                    </h2>
+                                    <div class="menu-footer-information-container  ">
+                                        <ul id="menu-footer-information" class="menu">
+                                            <li>
+                                                <a href="#">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delivery Imformation</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Privacy policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Terms & Conditions</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="widget widget_nav_menu p-5">
+                                    <h2 class="widget-title m-4">
+                                        Extras
+                                    </h2>
+                                    <div class="menu-footer-information-container">
+                                        <ul id="menu-footer-information" class="menu">
+                                            <li>
+                                                <a href="#">Brands</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Gift Vouchers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Affiliates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Specials</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Site Map</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="widget-title-s-font widget widget_text ">
+                                    <h4 class="widget-title m-4">
+                                        Contact us
+                                    </h4>
+                                    <div class="text-widge">
+                                        <ul class="footer-contact-us">
+                                            <li>
+                                                <i class="fa fa-map-marker p-color"></i>
+                                                <span> Great Store London Oxford Street, 012 United Kingdom</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-envelope p-color"></i>
+                                                <span>emailgreatstore@gmail.com </span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone p-color"></i>
+                                                <span>(+92) 3456 7890</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="bootstrap-autocomplete.min.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>

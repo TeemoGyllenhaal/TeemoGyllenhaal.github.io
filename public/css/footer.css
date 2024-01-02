@@ -1,251 +1,120 @@
-    /* Thiết lập font chữ và các thuộc tính chung cho trang */
-    body {
-        font-family: playfair display;  /* Sử dụng font chữ Arial hoặc font chữ sans-serif nếu Arial không khả dụng */
-        line-height: 1.6;  /* Thiết lập chiều cao của dòng chữ */
-        margin: 0;  /* Xóa margin mặc định của trình duyệt */
-        background-color: #f8f9fa;  /* Đặt màu nền cho trang */
-    }
-    /* Thêm CSS tùy chỉnh cho biểu tượng nếu cần thiết */
-    .p-color {
-        color: #F8DE7E; /* Màu sắc tùy chọn */
-    }
-    /* Thiết lập phần footer wrapper */
-    .main-footer-wrapper {
-        background-color: #ffffff;  /* Đặt màu nền cho phần footer wrapper */
-        padding: 20px;  /* Khoảng trắng bên trong phần footer wrapper */
-    }
-
-    /* Thiết lập phần footer chính */
-    .main-footer {
-        max-width: 1200px;  /* Chỉ định chiều rộng tối đa của phần footer */
-        margin: 0 auto;  /* Canh lề giữa tự động */
-    }
-
-    /* Thiết lập phần footer inner */
-    .footer_inner {
-        padding: 20px;  /* Khoảng trắng bên trong phần footer inner */
-    }
-
-    /* Thiết lập phần chứa đối tác (partner) */
-    .partner-wrap {
-        margin-top: 20px;  /* Khoảng cách từ phần partner-wrap đến phần trên cùng */
-        display: flex;  /* Sắp xếp các phần tử con theo chiều ngang */
-        justify-content: space-between;  /* Căn giữa các phần tử con */
-    }
-
-    /* Thiết lập phần chứa carousel */
-    .owl-carousel {
-        display: flex;  /* Sắp xếp các phần tử con theo chiều ngang */
-        flex-wrap: nowrap;  /* Ngăn chặn quấn dòng */
-        overflow: hidden;  /* Ẩn nội dung vượt ra khỏi phần tử cha */
-    }
-
-    /* Thiết lập phần chứa các stage trong carousel */
-    .owl-stage {
-        display: flex;  /* Sắp xếp các phần tử con theo chiều ngang */
-        flex-wrap: nowrap;  /* Ngăn chặn quấn dòng */
-        margin: 0;  /* Xóa margin mặc định */
-    }
-
-    /* Thiết lập các phần tử đối tác (partner-item) trong carousel */
-    .partner-item {
-        flex: 1;  /* Phần tử chiếm hết không gian còn lại theo chiều ngang */
-        text-align: center;  /* Căn giữa nội dung trong phần tử */
-        padding: 10px;  /* Khoảng trắng bên trong phần tử */
-        width: 100%;  /* Chiều rộng là 100% */
-    }
-
-    /* Thiết lập hình ảnh trong partner-item */
-    .partner-item img {
-        max-width: 100%;  /* Hình ảnh chiếm 100% chiều rộng */
-        height: auto;  /* Duy trì tỷ lệ khung hình khi thay đổi kích thước */
-        border: none;  /* Loại bỏ đường viền mặc định */
-        border-radius: 5px;  /* Bo tròn góc của hình ảnh */
-    }
-
-    /* Thiết lập khi di chuột qua partner-item */
-    .partner-item:hover {
-        background-color: #ddd;  /* Đặt màu nền khi di chuột qua partner-item */
-    }
-
-    /* Thiết lập phần custom-aside (phần chứa bản đồ và scroll-up) */
-    .custom-aside {
-        background-color: #f4f4f4;  /* Đặt màu nền cho phần custom-aside */
-        padding: 20px;  /* Khoảng trắng bên trong custom-aside */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Hiệu ứng bóng đổ */
-    }
-
-    /* Thiết lập nội dung trong custom-aside */
-    .custom-aside-content {
-        display: flex;  /* Sắp xếp các phần tử con theo chiều ngang */
-        justify-content: space-around;  /* Căn giữa các phần tử con với khoảng trắng xung quanh */
-        align-items: center;  /* Căn giữa các phần tử con theo chiều dọc */
-    }
-
-    /* Thiết lập mỗi phần tử trong custom-aside */
-    .custom-aside-item {
-        flex: 1;  /* Phần tử chiếm hết không gian còn lại theo chiều ngang */
-        text-align: left;  /* Căn trái nội dung trong phần tử */
-        margin: 0;  /* Xóa margin mặc định */
-    }
-
-    /* Thiết lập phần map và scroll-up */
-    .map,
-    .scroll-up {
-        margin: 20px 0;  /* Khoảng cách từ phần map và scroll-up đến các phần khác */
-    }
-    /* Tắt chữ đậm cho .map và .scroll-up */
-    .map h2,
-    .scroll-up h2 {
-        font-weight: normal;
-    }
-
-    /* Thiết lập vị trí của "see map" */
-    .map {
-        text-align: right;
-    }
-
-    /* Thiết lập vị trí của "scroll up" */
-    .scroll-up {
-        text-align: left;
-    }
-    /* Thiết lập font chữ và kích thước cho .map và .scroll-up */
-    .map h2,
-    .scroll-up h2 {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 16px;
-    }
-
-    /* Thiết lập màu chữ khi di chuột qua "See Map" */
-    .map:hover h2 {
-        color: #F8DE7E;  /* Chọn màu mong muốn */
-    }
-
-    /* Thiết lập màu chữ khi di chuột qua "Scroll Up" */
-    .scroll-up:hover h2 {
-        color: #F8DE7E;  /* Chọn màu mong muốn */
-    }
-
-    /* Thiết lập phần sub-description */
-    .sub-description {
-        margin-top: 10px;  /* Khoảng cách từ trên xuống của phần sub-description */
-    }
-
-    /* Thiết lập danh sách và liên kết trong footer */
-    .menu-footer-information-container ul,
-    .footer-contact-us {
-        list-style: none;  /* Loại bỏ ký hiệu danh sách mặc định */
-        padding: 0;  /* Xóa padding mặc định của danh sách */
-    }
-
-    /* Thiết lập font chữ và kích thước cho danh sách menu trong menu-footer-information-container */
-    .menu-footer-information-container ul.menu {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 14px;
-    }
-    /* Thiết lập font chữ và kích thước cho .footer-logo */
-    .footer-logo {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 14px;
-        
-    }
-
-    /* Thiết lập màu chữ cho sub-description trong .footer-logo */
-    .sub-description {
-        color: #999999; /* Màu chữ */
-        margin-top: 10px; /* Khoảng cách từ trên xuống */
-    }
-
-    /* Thiết lập font chữ và kích thước cho các mục trong danh sách menu */
-    .menu-footer-information-container ul.menu li {
-        font-family: 'Varela Round', sans-serif;
-    }
-
-    /* Thiết lập màu chữ cho các liên kết trong danh sách menu */
-    .menu-footer-information-container ul.menu li a {
-        color: #999999; /* Màu chữ */
-        text-decoration: none; /* Xóa gạch chân mặc định của liên kết */
-    
-    }
-
-    /* Thiết lập màu chữ khi di chuột qua các liên kết */
-    .menu-footer-information-container ul.menu li a:hover {
-        color: #F8DE7E; /* Màu chữ khi hover */
-    }
+body {
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  }
+  .container{
+    padding: 0 0 0 60px;
+  }
+  span {
+    color: #AAAAAA;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 13px;
+    font-family: "Varela Round";
+    font-weight: 100;
+    text-transform: none;
 
 
-    /* Thiết lập font chữ và kích thước cho danh sách liên hệ trong .footer-contact-us */
-    .footer-contact-us {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 14px;
-        list-style: none; /* Xóa ký hiệu danh sách mặc định */
-        padding: 0; /* Xóa padding mặc định của danh sách */
-    }
 
-    /* Thiết lập màu chữ cho các mục trong danh sách liên hệ */
-    .footer-contact-us li {
-        color: #999999; /* Màu chữ */
-        margin-bottom: 10px; /* Khoảng cách giữa các mục */
-    }
+  }
 
-    /* Thiết lập màu chữ cho biểu tượng */
-    .footer-contact-us i {
-        margin-right: 10px; /* Khoảng cách từ phải sang của biểu tượng */
-        color: #007bff; /* Màu chữ cho biểu tượng */
-    }
+  .p-3:hover span {
+    color: #dec18c;
+    /* Màu chữ khi di chuột vào */
+  }
+
+  .khoi {
+    width: 100%;
+    background-color: #F9F9F9;
+    height: 65px;
+
+  }
+
+  span:hover {
+    color: #dec18c;
+    text-decoration: none;
+  }
+
+  .map-container {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 
+  section {
+    padding: 60px 0;
+  } */
+
+  #section2 {
+    display: none;
+    /* Đặt hình nền cho Section 2 */
+    background-image: url('/public/images/Screenshot\ 2023-12-29\ 135033.png');
+    background-size: cover;
+    /* Điều chỉnh dựa trên nhu cầu cụ thể của bạn */
+    background-repeat: no-repeat;
+    /* Ngăn chặn hình nền từ việc lặp lại */
+    /* Thêm các thuộc tính nền khác nếu cần */
+    height: 700px;
+  }
 
 
-    /* Thiết lập phần chứa các cột trong footer-top-col-4 */
-    /* Thiết lập phần chứa các cột trong footer-top-col-4 */
-    .footer-top-col-4,
-    .footer-1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  /* .main {
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-    /* Thiết lập các phần sidebar trong footer */
-    .footer-sidebar {
-        flex-basis: calc(25% - 20px);
-        margin: 0;
-    }
+  #section2 {
+    display: none;
+  } */
 
-    /* Thiết lập vị trí và căn lề cho nội dung trong các sidebar */
-    .widget-footer-logo,
-    .widget_nav_menu,
-    .widget-title-s-font {
-        text-align: left;
-    }
+  h2 {
+    font-size: 25px;
+  }
 
-    /* Thiết lập font chữ và kích thước cho tiêu đề "Extras" và "Contact us" */
-    .widget_nav_menu h4.widget-title span,
-    .widget-title-s-font h4.widget-title span {
-        font-family: 'Playfair Display', serif;
-        font-size: 25px;
-    }
+  a {
+    text-decoration: none;
+    color: #AAAAAA;
+  }
 
-    /* Thiết lập khoảng cách từ trên xuống cho phần sub-description, menu-footer-information-container và widget-title-s-font */
-    .sub-description,
-    .menu-footer-information-container,
-    .widget-title-s-font {
-        margin-top: 10px;
-    }
+  .text-logo {
+    color: #AAAAAA;
+  }
 
-    /* Thiết lập danh sách và liên kết trong footer */
-    .menu-footer-information-container ul,
-    .footer-contact-us {
-        list-style: none;
-        padding: 0;
-    }
+  ul,
+  ol {
+    list-style: none;
+  }
 
-    /* Thiết lập màu chữ cho liên kết trong danh sách menu */
-    .menu-footer-information-container ul.menu li a {
-        color: #999999;
-        text-decoration: none;
-    }
+  /* Tùy chỉnh màu sắc cho liên kết khi hover (nếu cần) */
+  a:hover {
+    color: #dec18c;
+    /* Màu sắc thay đổi khi di chuột vào liên kết */
+  }
 
-    /* Thiết lập màu chữ khi di chuột qua liên kết */
-    .menu-footer-information-container ul.menu li a:hover {
-        color: #F8DE7E;
-    }
+  .p-color {
+    color: #dec18c;
+  }
 
+  .footer-contact-us li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-widge .footer-contact-us i {
+    margin-right: 5px;
+    /* Giảm khoảng cách bên phải của icon */
+  }
+
+  .text-widge .footer-contact-us span {
+    margin: 0;
+    /* Xóa margin mặc định của đoạn văn bản */
+  }

@@ -199,3 +199,98 @@
     font-family: "Varela Round" !important;
     font-style: normal !important;
 }
+.bottom-right-container {
+    right: 30px;
+    position: absolute;
+    max-width: 320px;
+    bottom: 30px;
+    opacity: .98;
+    max-width: 380px;
+    max-height: 245px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 60px 45px;
+    background-color: #fff;
+}
+
+.sc-product-categories-home-wrap.style-01 {
+    width: 290px;
+    position: absolute;
+    z-index: 4;
+    top: 180px;
+    left: 95px;
+    -webkit-transform: translate(50px, 60px);
+    -moz-transform: translate(50px, 60px);
+    -ms-transform: translate(50px, 60px);
+    -o-transform: translate(50px, 60px);
+    transform: translate(50px, 60px);
+    background-color: #dec18c;
+}
+
+.product-categories-home a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.product-categories-home li {
+    list-style: none;
+    transition: transform 0.4s ease;
+    margin-bottom: 25px;
+}
+
+.product-categories-home li:hover {
+    transform: translateX(20px);
+}
+
+.product-categories-home {
+    margin-top: 20px;
+}
+
+.product-categories-home i {
+    font-size: 6px;
+    color: #c29938;
+}
+
+.handmade-banner.style1.content-center .content-middle-inner {
+    text-align: center;
+}
+
+.content-middle-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.handmade-banner {
+    position: relative;
+}
+
+.bg-img {
+    height: 270px;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+content-middle-inner {
+    text-align: center;
+}
+
+.desc {
+    margin-top: 50px;
+}
+.new-arrival-1{
+    margin-top:40px;
+}

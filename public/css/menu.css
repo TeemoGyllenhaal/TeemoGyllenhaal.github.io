@@ -1,0 +1,219 @@
+.language-currency {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.language,
+.currency {
+    margin: 10px;
+}
+
+.language li,
+.currency li {
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #878787;
+    transition: color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #dec18c;
+}
+
+.dropdown-toggle {
+    color: #878787;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.dropdown-toggle:hover {
+    color: #dec18c;
+}
+
+
+.language .dropdown-menu,
+.currency .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    list-style: none;
+    padding: 10px;
+    width: 30px;
+    height: 120px;
+
+}
+
+.language .dropdown-menu li,
+.currency .dropdown-menu li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.language:hover .dropdown-menu,
+.currency:hover .dropdown-menu {
+    display: block;
+}
+
+.language li,
+.currency li {
+    margin-right: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Varela Round";
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.ts-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    transition: color 0.2S ease;
+    color: #878787;
+}
+
+.text-widget {
+    color: #dec18c;
+    padding-right: 15px;
+}
+
+.my-account,
+.wishlist,
+.blog,
+.login {
+    padding-right: 15px;
+}
+
+.nav-menu a:hover {
+    color: #dec18c;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-header {
+    display: flex;
+}
+
+.icon-header a {
+    color: #dec18c;
+}
+
+.logo img {
+    max-height: 134px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-bottom {
+    font-family: "Varela Round";
+    display: flex;
+}
+
+.header-bottom .bomttom-menu-left>ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-bottom .bomttom-menu-left>ul>li {
+    margin-right: 20px;
+}
+
+.header-bottom .bomttom-menu-left>ul>li>a {
+    text-decoration: none;
+    color: #878787;
+    transition: color 0.2s ease;
+}
+
+.header-bottom .bomttom-menu-left>ul>li>a:hover {
+    color: #dec18c;
+}
+
+.header-bottom {
+    font-family: "Varela Round";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom a {
+    text-decoration: none;
+    color: #878787;
+}
+
+.header-bottom a:hover {
+    color: #dec18c;
+}
+
+.header-bottom .bomttom-menu-left>ul,
+.header-bottom .bomttom-menu-left>ul ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-menu {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-menu-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.bomttom-menu-left {
+    margin-right: auto;
+}
+
+.twitter,
+.facebook,
+.vimeo,
+.pinterest {
+    margin-left: auto;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.twitter a,
+.facebook a,
+.vimeo a,
+.pinterest a {
+    color: #dec18c;
+}
+
+.twitter a:hover,
+.facebook a:hover,
+.vimeo a:hover,
+.pinterest a:hover {
+    color: #878787;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}

@@ -27,7 +27,10 @@
         href="https://themes.g5plus.net/handmade/comments/feed/" />
     <link rel="alternate" type="application/rss+xml" title="HandMade &raquo; Birthday Gifts Grouped Comments Feed"
         href="https://themes.g5plus.net/handmade/product/birthday-gifts-products/feed/" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       
+       
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,6 +66,149 @@
             border-radius: 5px;
             transition: transform 0.3s ease-in-out;
         }
+
+        h1.product_title.entry-title.p-font {
+            font-weight: 400;
+            font-size: 36px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            clear: none;
+            margin-top: 0;
+            padding: 0;
+            font-family: varela round;
+            font-style: normal;
+            color: #333;
+            display: block;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        p.price {
+            font-size: 36px;
+            line-height: 1.2;
+            font-style: normal;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+            color: #dec18c;
+            font-weight: 400;
+            display: block;
+            margin: 0;
+            padding: 0;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-size: 14px;
+            color: #777;
+            line-height: 1.8;
+            margin-bottom: 35px;
+
+        }
+
+        label {
+            font-weight: 400;
+            font-size: 17px;
+            color: #1f1f1f;
+            margin: 0;
+            line-height: 42px;
+            display: inline-block;
+            max-width: 100%;
+            cursor: default;
+            border-spacing: 0;
+            border-collapse: collapse;
+            text-indent: initial;
+            background-color: #fff;
+            color: #dec18c;
+            line-height: 42px;
+        }
+
+        a {
+            color: #dec18c;
+            text-decoration: none;
+            line-height: 42px;
+        }
+        .container .border .align-items-start li {
+        list-style: none; /* Xóa chấm đầu dòng */
+    }
+
+    .container .border .align-items-start li a {
+        color: #aaa;
+        text-decoration: none;
+    }
+    .single_add_to_cart_button{
+        background-color: #dec18c;
+        color: #ffffff;
+    }
+    .single_add_to_cart_button:hover {
+        background-color: #36454F; /* Màu sắc mới khi di chuột vào */
+        color: #ffffff; /* Màu văn bản mới khi di chuột vào */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+    }
+    .yith-wcwl-add-to-wishlist .add_to_wishlist {
+        font-size: 16px;
+        color: #777; /* Màu sắc mặc định */
+        text-decoration: none;
+    }
+
+    .yith-wcwl-add-to-wishlist:hover .add_to_wishlist,
+    .yith-wcwl-add-to-wishlist.added .add_to_wishlist {
+        color: #dec18c; /* Màu sắc mới khi di chuột vào hoặc đã thêm vào danh sách mong muốn */
+    }
+
+    .compare {
+        font-size: 16px;
+        color: #777; /* Màu sắc mặc định */
+        text-decoration: none;
+    }
+
+    .compare:hover,
+    .compare.added {
+        color: #dec18c; /* Màu sắc mới khi di chuột vào hoặc đã thêm vào danh sách so sánh */
+    }
+     /* Màu chữ và font chữ cho tab Description */
+     #tab-title-description a {
+        color: #777; /* Màu xanh da trời */
+        font-family: 'Arial', sans-serif; /* Font chữ Arial hoặc font chữ khác */
+        font-size: 16px; /* Kích thước font chữ */
+        text-decoration: none; /* Không gạch chân */
+    
+    }
+
+    /* Màu chữ và font chữ cho tab Reviews */
+    #tab-title-reviews a {
+        color: #777; /* Màu đỏ */
+        font-family: 'Verdana', sans-serif; /* Font chữ Verdana hoặc font chữ khác */
+        font-size: 16px; /* Kích thước font chữ */
+        text-decoration: none; /* Không gạch chân */
+    }
+    .container.text-center.border {
+        padding: 35px; /* Thêm padding để tăng kích thước độ rộng của border */
+    }
+    #tab-title-description a:hover{
+        color: #dec18c;
+    }
+    #tab-title-reviews a:hover{
+        color: #dec18c;
+    }
+    .description_tab a,
+    .reviews_tab a,
+    .cochu a {
+        font-size: 25px; /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+    }
     </style>
 </head>
 
@@ -108,95 +254,117 @@
                                     ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
                                     Mauris placerat eleifend leo 2.</p>
                             </div>
-                            <form class="cart grouped_form"
-                                action="https://themes.g5plus.net/handmade/product/birthday-gifts-products/"
-                                method="post" enctype="multipart/form-data">
-                                <table cellspacing="0" class="woocommerce-grouped-product-list group_table">
-                                    <tbody>
-                                        <tr id="product-1555"
-                                            class="woocommerce-grouped-product-list-item product type-product post-1555 status-publish instock product_cat-birthday-gifts product_cat-illumination product_cat-romantic product_cat-special-goods product_tag-birthday product_tag-illumination product_tag-romatic product_tag-special-goods has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                            <div class="row g-0 text-center text-start">
-                                                <div class="col-6 col-md-3 ">
-                                                    <td class="woocommerce-grouped-product-list-item__quantity">
-                                                        <div class="quantity">
-                                                            <div class="quantity-inner">
-                                                                <button class="btn-number" data-type="minus">
-                                                                    <i class="pe-7s-less"></i>
-                                                                </button>
-                                                                <input type="text" step="1" min="0"
-                                                                    name="quantity[1555]" value="0" title="Qty"
-                                                                    class="input-text qty text" size="4" style="background-color: #FFFFFF;"/>
-                                                                <button class="btn-number" data-type="plus">
-                                                                    <i class="pe-7s-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </div>
-                                                <div class="col-6 col-md-3">
-                                                    <td class="woocommerce-grouped-product-list-item__label">
-                                                        <label for="product-1555">
-                                                            <a
-                                                                href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower
-                                                                Bending</a>
-                                                        </label>
-                                                    </td>
-                                                </div>
-                                                <div class="col-6 col-md-6">
-                                                    <td class="woocommerce-grouped-product-list-item__price">
-                                                        <span class="woocommerce-Price-amount amount">
-                                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                            35.00
-                                                        </span>
-                                                    </td>
-                                                </div>
-                                            </div>
-                                        </tr>
-                                        <tr id="product-1546"
-                                            class="woocommerce-grouped-product-list-item product type-product post-1546 status-publish instock product_cat-birthday-gifts product_cat-greeting-cards product_cat-illumination product_tag-birthday product_tag-greeting-cards has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                            <div class="container text-center">
+                                <div class="row  row-cols-lg-3 g-2 g-lg-3">
+                                    <div class="col" style="background: #fafafa ;flex: 0 0 20%;">
+                                        <div>
                                             <td class="woocommerce-grouped-product-list-item__quantity">
                                                 <div class="quantity">
                                                     <div class="quantity-inner">
-                                                        <button class="btn-number" data-type="minus">
+                                                        <button class="btn-number" data-type="minus"
+                                                            style="background-color:#fafafa; border: none; font-size: 20px; padding-right: 1px;">
                                                             <i class="pe-7s-less"></i>
                                                         </button>
-                                                        <input type="text" step="1" min="0" name="quantity[1546]"
-                                                            value="0" title="Qty" class="input-text qty text"
-                                                            size="4" style="background-color: #FFFFFF;" />
-                                                        <button class="btn-number" data-type="plus">
+                                                        <input type="text" step="1" min="0" name="quantity[1555]"
+                                                            value="0" title="Qty" class="input-text qty text" size="4"
+                                                            style="background-color: #fafafa; padding: 2px;">
+                                                        <button class="btn-number" data-type="plus"
+                                                            style="background-color:#fafafa; border: none; font-size: 20px; padding-left: 1px;">
                                                             <i class="pe-7s-plus"></i>
                                                         </button>
                                                     </div>
                                                 </div>
                                             </td>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-left">
                                             <td class="woocommerce-grouped-product-list-item__label">
-                                                <label for="product-1546">
+                                                <label for="product-1555">
                                                     <a
-                                                        href="https://themes.g5plus.net/handmade/product/birthday-greeting-cards/">Birthday
-                                                        Greeting Cards</a>
+                                                        href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower
+                                                        Bending</a>
                                                 </label>
                                             </td>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div style="text-align: left;">
                                             <td class="woocommerce-grouped-product-list-item__price">
-                                                <del>
-                                                    <span class="woocommerce-Price-amount amount">
-                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                        40.00
-                                                    </span>
-                                                </del>
-                                                <ins>
-                                                    <span class="woocommerce-Price-amount amount">
-                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                        35.00
-                                                    </span>
-                                                </ins>
+                                                <span class="woocommerce-Price-amount amount" style="font-size: 15px;">
+                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                    35.00
+                                                </span>
                                             </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <input type="hidden" name="add-to-cart" value="2239" />
-                                <button type="submit" class="single_add_to_cart_button button alt">Add to cart</button>
-                            </form>
-                            <div class="single-product-function">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px">
+                                    <div class="row  row-cols-lg-3 g-2 g-lg-3">
+                                        <div class="col-" style="background: #fafafa; flex: 0 0 20%;">
+                                            <div>
+                                                <td class="woocommerce-grouped-product-list-item__quantity">
+                                                    <div class="quantity">
+                                                        <div class="quantity-inner">
+                                                            <button class="btn-number" data-type="minus"
+                                                                style="background-color:#fafafa; border: none; font-size: 20px; padding-right: 1px;">
+                                                                <i class="pe-7s-less"></i>
+                                                            </button>
+                                                            <input type="text" step="1" min="0" name="quantity[1555]"
+                                                                value="0" title="Qty" class="input-text qty text"
+                                                                size="4"
+                                                                style="background-color: #fafafa; padding: 2px;">
+                                                            <button class="btn-number" data-type="plus"
+                                                                style="background-color:#fafafa; border: none; font-size: 20px; padding-left: 1px;">
+                                                                <i class="pe-7s-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-left">
+                                                <td class="woocommerce-grouped-product-list-item__label">
+                                                    <label for="product-1546">
+                                                        <a
+                                                            href="https://themes.g5plus.net/handmade/product/birthday-greeting-cards/">Birthday
+                                                            Greeting Cards</a>
+                                                    </label>
+                                                </td>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div style="text-align: left;">
+                                                <td class="woocommerce-grouped-product-list-item__price">
+                                                    <del>
+                                                        <span class="woocommerce-Price-amount amount"
+                                                            style="font-size: 15px;">
+                                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                            40.00
+                                                        </span>
+                                                    </del>
+                                                    <ins>
+                                                        <span class="woocommerce-Price-amount amount"
+                                                            style="font-size: 15px;">
+                                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                            35.00
+                                                        </span>
+                                                    </ins>
+                                                </td>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left;margin-top: 35px;">
+                                        <input type="hidden" name="add-to-cart" value="2239">
+                                        <button type="submit" class="single_add_to_cart_button button alt"
+                                            style="font-size: 16px; border: none; padding: 10px 50px;">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-4 g-2 g-lg-3" style="margin-top: 35px;">
                                 <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2239 wishlist-fragment on-first-load"
                                     data-fragment-ref="2239"
                                     data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:2239,&quot;parent_product_id&quot;:2239,&quot;product_type&quot;:&quot;grouped&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
@@ -204,66 +372,71 @@
                                         <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=2239"
                                             rel="nofollow" data-product-id="2239" data-product-type="grouped"
                                             data-original-product-id="2239"
-                                            class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
+                                            class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist"
+                                            style="font-size: 16px;">
+                                            <i class="fa-regular fa-heart"></i><span>Add to Wishlist</span>
                                         </a>
                                     </div>
                                 </div>
                                 <a title="Compare"
                                     href="https://themes.g5plus.net/handmade/product/birthday-gifts-products/?action=yith-woocompare-add-product&amp;id=2239"
-                                    class="compare" data-product_id="2239">
+                                    class="compare" data-product_id="2239"
+                                    style="font-size: 16px;">
                                     <i class="fa fa-exchange"></i>
                                     Compare
                                 </a>
                             </div>
-                            <div class="product_meta">
-                                <span class="product-stock-status-wrapper">
-                                    <label>Availability:</label>
-                                    <span class="product_stock">
-                                        <span class="product-stock-status in-stock">In stock</span>
+                            <div class="container text-start">
+                                <div class="row align-items-center">
+                                  <div class="col-12 border-bottom">
+                                    <span class="product-stock-status-wrapper">
+                                        <label style="font-size: 14px;color: #777;" >Availability:</label>
+                                        <span class="product_stock">
+                                            <span class="product-stock-status in-stock" style="font-size: 14px;color: #777;">In stock</span>
+                                        </span>
                                     </span>
-                                </span>
-                                <span>
-                                    <label>Size:</label>
-                                    <span class="product_dimensions">N/A</span>
-                                </span>
-                                <span class="posted_in">
-                                    <label>Category:</label>
-                                    <a href="https://themes.g5plus.net/handmade/product-category/birthday-gifts/"
-                                        rel="tag">Birthday Gifts</a>
-                                    .
-                                </span>
+                                  </div>
+                                  <div class="col-12 border-bottom">
+                                    <span>
+                                        <label style="font-size: 14px;color: #777; ">Size:</label>
+                                        <span class="product_dimensions" style="font-size: 14px;color: #777;">N/A</span>
+                                    </span>
+                                  </div>
+                                  <div class="col-12 border-bottom">
+                                    <span class="posted_in">
+                                        <label style="font-size: 14px;color: #777;">Category:</label>
+                                        <a href="https://themes.g5plus.net/handmade/product-category/birthday-gifts/" rel="tag" style="font-size: 14px;">Birthday Gifts</a>
+                                        .
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="social-share-wrap">
+                            <div class="social-share-wrap" style="margin-top: 30px;" >
                                 <label>Share:</label>
                                 <ul class="social-share">
                                     <li>
-                                        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthemes.g5plus.net%2Fhandmade%2Fproduct%2Fbirthday-gifts-products%2F"
-                                            target="_blank" rel="nofollow">
+                                        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthemes.g5plus.net%2Fhandmade%2Fproduct%2Fbirthday-gifts-products%2F" target="_blank" rel="nofollow">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript: window.open('http://twitter.com/share?text=Birthday Gifts Grouped&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/','_blank', 'width=900, height=450');"
-                                            rel="nofollow">
+                                        <a href="javascript: window.open('http://twitter.com/share?text=Birthday Gifts Grouped&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/','_blank', 'width=900, height=450');" rel="nofollow">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript: window.open('http://www.linkedin.com/shareArticle?mini=true&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&title=Birthday Gifts Grouped','_blank', 'width=500, height=450');"
-                                            rel="nofollow">
+                                        <a href="javascript: window.open('http://www.linkedin.com/shareArticle?mini=true&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&title=Birthday Gifts Grouped','_blank', 'width=500, height=450');" rel="nofollow">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript: window.open('http://www.tumblr.com/share/link?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&name=Birthday Gifts Grouped','_blank', 'width=500, height=450');"
-                                            rel="nofollow">
+                                        <a href="javascript: window.open('http://www.tumblr.com/share/link?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&name=Birthday Gifts Grouped','_blank', 'width=500, height=450');" rel="nofollow">
                                             <i class="fa fa-tumblr"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript: window.open('http://pinterest.com/pin/create/button/?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&media=https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg&description=Birthday Gifts Grouped','_blank', 'width=900, height=450');"
-                                            rel="nofollow">
+                                        <a href="javascript: window.open('http://pinterest.com/pin/create/button/?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&media=https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg&description=Birthday Gifts Grouped','_blank', 'width=900, height=450');" rel="nofollow">
                                             <i class="fa fa-pinterest"></i>
                                         </a>
                                     </li>
@@ -272,13 +445,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="container overflow-hidden text-start border-top" style="margin-top: 70px;padding-top: 50px;">
+                    <div class="row gx-5">
+                        <div class="col-3">
+                            <div class="m-3 p-3">
+                                <div class="container text-center border">
+                                    <div class="row align-items-start">
+                                        <div class="col-12 ">
+                                            <li class="description_tab border-bottom" id="tab-title-description" role="tab" aria-controls="tab-description" style="text-align: left;">
+                                                <a href="#tab-description">Description</a>
+                                            </li>
+                                        </div>
+                                        <div class="col-12">
+                                            <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews" style="text-align: left;">
+                                                <a href="#tab-reviews">Reviews (0)</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9" >
+                            <div class="container p-4" >
+                                <div>
+                                    <div class="row align-items-start">
+                                        <div class="col-12 "  >
+                                            <li class="description_tab border-bottom " id="tab-title-description" role="tab" aria-controls="tab-description" style="text-align: left;text-decoration: none; list-style: none; padding-bottom: 10px;">
+                                                <a href="#tab-description" style="font-size: 25px;color:#000;">Description</a>
+                                            </li>
+                                        </div>
+                                        <div class="col-12" style="font-size: 14px; color: #777; margin-top: 20px;">
+                                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

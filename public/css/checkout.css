@@ -1,0 +1,217 @@
+h3.check-out-title {
+    font-size: 25px;
+    color: #25262c;
+    text-align: center;
+    max-width: 570px;
+    margin: auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #dec18c;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.title h3 {
+    text-align: center;
+
+}
+
+.woocommerce-checkout-info {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    text-align: center;
+    max-width: 570px;
+    margin: auto;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+.form-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-last {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.first {
+    flex: 1;
+    margin-right: 5%;
+}
+
+.first .input-box input,
+.last .input-box input {
+    width: 100%;
+}
+
+.second {
+    flex: 2;
+    /* or adjust as needed */
+    /* Rest of your styling for the 'second' div */
+}
+
+.form-info input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #858585;
+    background-color: #f5f5f5;
+}
+
+
+
+.required {
+    color: red;
+}
+
+#username1 {
+    height: 130px;
+}
+
+#order_review_heading {
+    text-align: center;
+}
+
+#order_review {
+    text-align: center;
+}
+
+.order-content {
+    max-width: 600px;
+    /* Điều chỉnh theo kích thước bạn mong muốn */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Căn giữa các phần tử trong ul */
+ul.woocommerce-shipping-methods,
+.wc_payment_methods {
+    text-align: center;
+}
+
+/* Định dạng các phần tử trong ul.woocommerce-shipping-methods và .wc_payment_methods */
+ul.woocommerce-shipping-methods li,
+.wc_payment_methods li {
+    display: inline-block;
+    margin: 0 10px;
+    /* Khoảng cách giữa các phần tử */
+}
+
+/* Căn giữa nội dung trong li */
+ul.woocommerce-shipping-methods label,
+.wc_payment_methods label {
+    display: block;
+    text-align: center;
+}
+
+.pay {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.product,
+.pillow,
+.subtotal,
+.dolla,
+.total,
+.free-ship {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.payment_box_title {
+    text-align: center;
+    background-color: #dec18c;
+}
+
+.desc {
+    text-align: center;
+    color: #777;
+    margin: 20px;
+}
+
+.payment_box_check {
+    text-align: center;
+}
+
+.payment_box_titlee {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-alt {
+    display: block;
+    margin: 0 auto;
+    background-color: #dec18c;
+    border: none;
+    transition: background-color 0.4s ease;
+    color: #fff;
+    padding: 9px 45px;
+}
+
+.button-alt:hover {
+    background-color: #515151;
+}
+
+.form-info textarea {
+    resize: both;
+    width: auto;
+    max-width: 100%;
+    min-width: 100px;
+}
+
+.second p {
+    font-family: 'Varela Round'
+}
+
+.first p,
+.last p {
+    font-family: 'Varela Round';
+}
+
+.payment_box_titlee {
+    margin-bottom: 20px;
+}
+
+.input-box select,
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #858585;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.input-box select {
+    background-size: 20px;
+}
+
+
+

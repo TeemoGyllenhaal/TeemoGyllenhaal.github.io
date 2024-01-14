@@ -1,3 +1,13 @@
+.font-main {
+    font-family: "Varela Round";
+}
+
+.font-display {
+    font-family: "Playfair Display" !important;
+}
+.font-normal th{
+    font-weight: normal;
+}
 .page-title-inner {
     position: relative;
 }
@@ -15,20 +25,113 @@
     margin-bottom: 50px;
     padding-bottom: 30px;
 }
+
 .home i {
     margin: 0 5px;
 }
-.home li  {
+
+.home li {
     text-decoration: none;
-    color :#dec18c;
+    color: #dec18c;
     list-style: none;
 }
-.home li a{
+
+.home li a {
     text-decoration: none;
-    color :#dec18c;
+    color: #dec18c;
     list-style: none;
 }
-.cart li{
+
+.cart li {
     list-style: none;
     text-decoration: none;
+}
+
+.main-bg {
+    background-color: #f8f9fa !important;
+}
+
+.main-bg td,
+.main-bg th {
+    background-color: #f8f9fa;
+}
+
+.checkout-button {
+    padding: 12px;
+    min-width: 140px;
+    background-color: #dec18c;
+    border-radius: 0;
+}
+
+.checkout-button:hover {
+    background-color: #414141;
+}
+
+.update-button {
+    padding: 12px;
+    min-width: 140px;
+    background-color: #414141;
+    border-radius: 0;
+}
+
+.update-button:hover {
+    background-color: #dec18c;
+}
+
+.input-text-1 {
+    min-width: 270px;
+    padding: 0 15px;
+    margin: 0 15px 0 0;
+    outline: 0;
+    border: none;
+    height: 48px;
+    background-color: #dee2e6;
+
+}
+
+.input-text-2 {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 15px 0 0;
+    outline: 0;
+    border: none;
+    height: 44px;
+    background-color: #dee2e6;
+    border-radius: 0;
+}
+
+.button-apply {
+    background-color: #dec18c;
+    padding: 12px;
+    min-width: 140px;
+    border: none;
+    border-radius: 0;
+}
+
+.button-apply:hover {
+    background-color: #414141;
+}
+
+.btn-big {
+    width: 100%;
+    border-radius: 0;
+    background-color: #dec18c;
+    font-size: medium;
+}
+
+.btn-big:hover {
+    background-color: #414141;
+}
+
+.border-none-l-r th,
+.border-none-l-r td {
+    border-left: none;
+
+    border-right: none;
+
+}
+
+.price-color span {
+    color: #dec18c;
+    font-size: small;
 }

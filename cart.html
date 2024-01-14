@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="public\css\footer.css">
     <link rel="stylesheet" href="public\css\cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="public\css\main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
+
     <title>Cart</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container font-main">
         <header class="header">
             <div class="header-top d-none d-lg-flex d-xl-flex ">
                 <div class="language-currency ">
@@ -163,25 +164,25 @@
         </header>
         <div class="page-title-inner block-center">
             <img width=100% height="281" src="public\images\banner-31.jpg">
-            <div class="block-center-inner">
-                <h1>My account</h1>
+            <div class="block-center-inner font-display">
+                <h1>Cart</h1>
             </div>
         </div>
-        <div class="breadcrumbs border-bottom">
+        <div class="breadcrumbs py-3 border-bottom">
             <div class="home">
                 <li>
                     <a href="/home.html">Home</a><i class="fas fa-angle-right"></i>
                 </li>
             </div>
             <div class="cart">
-                <li>
+                <li >
                     Cart
                 </li>
             </div>
         </div>
-        <div class="main-content mx-auto">
-            <table class="table table-bordered">
-                <thead>
+        <div class="main-content">
+            <table class="table table-bordered main-bg">
+                <thead class="font-normal">
                     <tr>
                         <th class="product-remove">&nbsp;</th>
                         <th scope="product-info">Product</th>
@@ -190,23 +191,24 @@
                         <th scope="product-total">Total</th>
                     </tr>
                 </thead>
-                <tbody class = "justify-item-between">
-                    <tr class = "align-middle text-center">
+                <tbody class="justify-item-between">
+                    <tr class="align-middle text-center">
                         <th scope="row">
                             <i class="bi bi-x-circle"></i>
                         </th>
-                        <td class="product-info d-flex">
-                            <div class="product-img pe-5 d-flex">
+                        <td class="product-info align-middle">
+                            <div class="product-img d-flex flex-row align-items-center">
                                 <img width="70" height="70"
-                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-15.jpg"
-                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="">
-                            </div>
-                            <div class="product-name d-flex align-items-center">
-                                Yellow Pillow
+                                    src="public\images\product-15-300x300.jpg">
+                                <div class="product-name ps-5">
+                                    Yellow Pillow
+                                </div>
                             </div>
                         </td>
-                        <td class="product-price text-start">
-                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-price text-start price-color">
+                            <span class="amount">
+                                $40.00
+                            </span>
                         </td>
                         <td class="product-quantity text-start">
                             <div class="quantity w-50 ">
@@ -214,33 +216,35 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" name="cart[655ea4bd3b5736d88afc30c9212ccddf][qty]" value="1" title="Qty" class="border  input-text qty text" size="4">
+                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
+                                        size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
                                 </div>
                             </div>
                         </td>
-                        <td class="product-total text-start">
-                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-total text-start price-color">
+                            <span>$40.00</span>
                         </td>
                     </tr>
-                    <tr class = "align-middle text-center">
+                    <tr class="align-middle text-center">
                         <th scope="row">
                             <i class="bi bi-x-circle"></i>
                         </th>
-                        <td class="product-info d-flex">
-                            <div class="product-img pe-5 d-flex">
+                        <td class="product-info align-middle">
+                            <div class="product-img d-flex flex-row align-items-center">
                                 <img width="70" height="70"
-                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-15.jpg"
-                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="">
-                            </div>
-                            <div class="product-name d-flex align-items-center">
-                                Yellow Pillow
+                                    src="public\images\banner-5.fw_.png">
+                                <div class="product-name ps-5">
+                                    Flower Bending
+                                </div>
                             </div>
                         </td>
-                        <td class="product-price text-start">
-                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-price text-start price-color">
+                            <span class="amount">
+                                $35.00
+                            </span>
                         </td>
                         <td class="product-quantity text-start">
                             <div class="quantity w-50 ">
@@ -248,33 +252,35 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" name="cart[655ea4bd3b5736d88afc30c9212ccddf][qty]" value="1" title="Qty" class="border  input-text qty text" size="4">
+                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
+                                        size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
                                 </div>
                             </div>
                         </td>
-                        <td class="product-total text-start">
-                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-total text-start price-color">
+                            <span>$35.00</span>
                         </td>
                     </tr>
-                    <tr class = "align-middle text-center">
+                    <tr class="align-middle text-center">
                         <th scope="row">
                             <i class="bi bi-x-circle"></i>
                         </th>
-                        <td class="product-info d-flex">
-                            <div class="product-img pe-5 d-flex">
+                        <td class="product-info align-middle">
+                            <div class="product-img d-flex flex-row align-items-center">
                                 <img width="70" height="70"
-                                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-15.jpg"
-                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="">
-                            </div>
-                            <div class="product-name d-flex align-items-center">
-                                Yellow Pillow
+                                    src="public\images\product-21-300x300.jpg">
+                                <div class="product-name ps-5">
+                                    Knit From Wool Bracelets
+                                </div>
                             </div>
                         </td>
-                        <td class="product-price text-start">
-                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-price text-start price-color">
+                            <span class="amount">
+                                $30.00
+                            </span>
                         </td>
                         <td class="product-quantity text-start">
                             <div class="quantity w-50 ">
@@ -282,20 +288,348 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" name="cart[655ea4bd3b5736d88afc30c9212ccddf][qty]" value="1" title="Qty" class="border  input-text qty text" size="4">
+                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
+                                        size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
                                 </div>
                             </div>
                         </td>
-                        <td class="product-total text-start">
-                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span>
+                        <td class="product-total text-start price-color">
+                            <span>$30.00</span>
                         </td>
                     </tr>
-
+                    <tr class="product-coupon">
+                        <td colspan="2" class="border-0 px-0 py-4">
+                            <div>
+                                <input type="text" name="coupon_code" class="input-text-1 " id="coupon_code" value=""
+                                    placeholder="Coupon code">
+                                <input type="submit" class="btn button-apply text-light" name="apply_coupon"
+                                    value="Apply coupon">
+                            </div>
+                        </td>
+                        <td colspan="3" class="border-0 text-end px-0 py-4">
+                            <div>
+                                <input type="submit" class=" btn update-button px-4 text-light" name="update_cart"
+                                    value="Update cart">
+                                <a href="https://themes.g5plus.net/handmade/checkout/"
+                                    class="checkout-button btn px-4 text-light">
+                                    Proceed to checkout</a>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
+            <div class="cart_detail py-5">
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <div class="display-6 font-display">
+                            Calculate Shipping
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <select id="inputState" class="form-select input-text-2 wit">
+                                <option selected>Country</option>
+                                <option>Vietnam</option>
+                                <option>Thailand</option>
+                                <option>USA</option>
+                                <option>Dubai</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="input-text-2" id="formGroupExampleInput"
+                                placeholder="State / Country">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="input-text-2" id="formGroupExampleInput2"
+                                placeholder="Town / City">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="input-text-2" id="formGroupExampleInput2"
+                                placeholder="Postcode / ZIP">
+                        </div>
+                        <button type="button" class="btn btn-lg btn-big text-light">Update Totals</button>
+                    </div>
+                    <div class="col-sm">
+                        <div class="display-6 font-display">
+                            Cart Totals
+                        </div>
+                        <table class="mb-3 mt-3 w-100 text-start table table-bordered main-bg border-none-l-r">
+                            <tbody class="font-normal">
+                                <tr class="cart-subtotal mb-3">
+                                    <th>Subtotal</th>
+                                    <td>
+                                        <span class="amount">$140.00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Shipping</th>
+                                    <td>
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Flat rate: $10.00
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Free shipping
+                                            </label>
+                                        </div>
+                                        <div>
+                                            Shipping options will be updated during checkout.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cart-total mb-3">
+                                    <th>Total</th>
+                                    <td>
+                                        <span class="amount">$150.00</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<footer class="main-footer-wrapper light">
+    <div id="wrapper-footer">
+      <div class="main-footer">
+        <div class="footer_inner clearfix">
+          <div class="footer-top-bar-wrapper">
+            <div class="footer-top-bar-inner">
+              <div class="full">
+                <div class=" sidebar">
+                  <aside id="handmade-partner-carousel-4" class="widget widget-partner-carousel">
+                    <div class="container-fluid">
+                      <div class="footer-top-bar-wrapper">
+                        <div class="text-center">
+                          <div class="row m-3 p-5 overflow-auto">
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 1">
+                                <img src="/public/images/partner-1.jpg" alt="Partner 1" class="img-fluid" width="150px">
+                              </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 2">
+                                <img src="/public/images/partner-2.jpg" alt="Partner 2" class="img-fluid" width="110px">
+                              </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 3">
+                                <img src="/public/images/partner-3.jpg" alt="Partner 3" class="img-fluid" width="110px">
+                              </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 4">
+                                <img src="/public/images/partner-4.jpg" alt="Partner 4" class="img-fluid" width="150px">
+                              </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 5">
+                                <img src="/public/images/partner-5.jpg" alt="Partner 5" class="img-fluid" width="110px">
+                              </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2">
+                              <a href="#" title="Partner 6">
+                                <img src="/public/images/partner-2 (1).jpg" alt="Partner 6" class="img-fluid"
+                                  width="110px">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="map scroll">
+                          <div class=" text-center main" id="section1">
+                            <div class="row alight-iteam-center">
+                              <div class="col text-end  border-end khoi p-4">
+                                <a href="#" id="scrollToSection2"><span> <i class="fas fa-location-dot"></i> SEE
+                                    MAP</span></a>
+                              </div>
+                              <div class="col text-start border-start khoi p-4">
+                                <span> <i class="fa-solid fa-circle-arrow-up "></i><a href="#"></a> SCROLL UP</span>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="main" id="section2">
+                            <h2>. </h2>
+                            <!-- Content of Section 2 goes here -->
+                            <a href="#section1"></a>
+                          </div>
+                        </div>
+                        <script>
+                          document.getElementById('scrollToSection2').addEventListener('click', function (event) {
+                            event.preventDefault();
+  
+                            // Hiển thị Section 2
+                            document.getElementById('section2').style.display = 'block';
+  
+                            // Cuộn mượt xuống Section 2
+                            document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+                          });
+                        </script>
+                        <div class="text-start">
+                          <div class="row align-items-center m-3 p-5">
+                              <div class="col">
+                                  <div class="footer-logo">
+                                      <a href="#">
+                                          <img class="footer-logo-img" src="/public/images/logo.png">
+                                      </a>
+                                      <div class="text-logo">
+                                          Letterpress, gold foil stamping, and more. Quality, sustainable materials like thick 100% PCW paper
+                                          and
+                                          veg-based inks.
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="widget widget_nav_menu p-5">
+                                      <h2 class="widget-title m-4">
+                                          Information
+                                      </h2>
+                                      <div class="menu-footer-information-container">
+                                          <ul id="menu-footer-information" class="menu">
+                                              <li>
+                                                  <a href="#">About Us</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Delivery Information</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Privacy policy</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Terms & Conditions</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Contact Us</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="widget widget_nav_menu p-5">
+                                      <h2 class="widget-title m-4">
+                                          Extras
+                                      </h2>
+                                      <div class="menu-footer-information-container">
+                                          <ul id="menu-footer-information" class="menu">
+                                              <li>
+                                                  <a href="#">Brands</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Gift Vouchers</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Affiliates</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Specials</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Site Map</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="widget-title-s-font widget widget_text">
+                                      <h4 class="widget-title m-4">
+                                          Contact us
+                                      </h4>
+                                      <div class="text-widge">
+                                          <ul class="footer-contact-us">
+                                              <li>
+                                                  <i class="fa fa-map-marker p-color"></i>
+                                                  <span> Great Store London Oxford Street, 012 United Kingdom</span>
+                                              </li>
+                                              <li>
+                                                  <i class="fa fa-envelope p-color"></i>
+                                                  <span>emailgreatstore@gmail.com </span>
+                                              </li>
+                                              <li>
+                                                  <i class="fa fa-phone p-color"></i>
+                                                  <span>(+92) 3456 7890</span>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="bottom-bar-wrapper light">
+                          <div class="bottom-bar-inner">
+                            <div class="container-fluid border-top">
+                              <div class="row p-5">
+                                <div class="col-md-6 sidebar text-left">
+                                  <aside id="text-3" class="copyright margin-top-10 widget widget_text">
+                                    <div class="textwidget">
+                                      <div>© Copyright 2015. Powered by WordPress.</div>
+                                      <div>Theme made by G5Theme</div>
+                                    </div>
+                                  </aside>
+                                </div>
+                                <div class="col-md-6 sidebar text-right">
+                                  <aside id="handmade-payment-gate-2" class="widget widget-payment-gate">
+                                    <ul class="payment-gate">
+                                      <li>
+                                        <a target="_blank" href="http://www.mastercard.com" title="Master card">
+                                          <img
+                                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/master_card.jpg"
+                                            alt="Master card" />
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a target="_blank" href="http://www.visa.com" title="Visa">
+                                          <img
+                                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/visa.jpg"
+                                            alt="Visa" />
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a target="_blank" href="https://www.paypal.com" title="Paypal">
+                                          <img
+                                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg"
+                                            alt="Paypal" />
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a target="_blank" href="https://www.americanexpress.com/"
+                                          title="American Express">
+                                          <img
+                                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
+                                            alt="American Express" />
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a target="_blank" href="https://www.westernunion.com" title="Weston Union">
+                                          <img
+                                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/weston_union.jpg"
+                                            alt="Weston Union" />
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </aside>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="main" id="section2">
+                      <h2>. </h2>
+                      <!-- Content of Section 2 goes here -->
+                      <a href="#section1"></a>
+                    </div>
+                </div>
+              </div>
+  </footer>

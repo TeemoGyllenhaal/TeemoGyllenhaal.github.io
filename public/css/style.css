@@ -28,7 +28,6 @@
 
 .thumb {
     position: relative;
-    /* Các thuộc tính khác của .thumb1 nếu có */
 }
 
 .product-flash-wrap {
@@ -327,4 +326,24 @@ content-middle-inner {
 
 .new-arrival-1 {
     margin-top: 40px;
+}
+.box-hover {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+.box-hover img {
+    max-width: 100%;
+    transition: all 1s;
+}
+
+.box-hover .img-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+.box-hover:hover .img-change {
+    opacity: 0;
 }

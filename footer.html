@@ -4,311 +4,927 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>Your Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;language=en_US&amp;key=YOUR_GOOGLE_MAPS_API_KEY"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <title>Document</title>
+  <!-- CSS Styles -->
   <style>
-    body {
-      font-family: "Varela Round";
-      font-weight: 400;
-      font-style: normal;
-      font-size: 14px;
-    }
-    .container{
-      padding: 0 0 0 60px;
-    }
-    span {
-      color: #AAAAAA;
-      margin-right: 40px;
-      margin-left: 40px;
-      font-size: 13px;
-      font-family: "Varela Round";
-      font-weight: 100;
-      text-transform: none;
-
-
-
+    /* Footer Main Wrapper */
+    .main-footer-wrapper {
+      background-color: #f5f5f5;
+      padding: 20px;
     }
 
-    .p-3:hover span {
-      color: #dec18c;
-      /* Màu chữ khi di chuột vào */
+    /* Partner Carousel Section */
+    .widget-partner-carousel .partner-wrap {
+      display: flex;
+      justify-content: space-between;
     }
 
-    .khoi {
-      width: 100%;
-      background-color: #F9F9F9;
-      height: 65px;
-
+    .widget-partner-carousel img {
+      max-width: 100%;
+      height: auto;
     }
 
-    span:hover {
-      color: #dec18c;
-      text-decoration: none;
+    /* Map Scroll Up Section */
+    .widget-map-scroll-up {
+      text-align: center;
+      margin-top: 20px;
     }
 
-    .map-container {
-      display: none;
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-top: 10px;
+    .map-scroll-up .map,
+    .map-scroll-up .scroll-up {
+      display: inline-block;
+      margin: 0 10px;
     }
 
-    html {
-      scroll-behavior: smooth;
+    /* Footer Top Holder Section */
+    .footer_top_holder {
+      background-color: #e0e0e0;
+      padding: 20px;
     }
 
-    /* 
-    section {
-      padding: 60px 0;
-    } */
-
-    #section2 {
-      display: none;
-      /* Đặt hình nền cho Section 2 */
-      background-image: url('/Screenshot\ 2023-12-29\ 135033.png');
-      background-size: cover;
-      /* Điều chỉnh dựa trên nhu cầu cụ thể của bạn */
-      background-repeat: no-repeat;
-      /* Ngăn chặn hình nền từ việc lặp lại */
-      /* Thêm các thuộc tính nền khác nếu cần */
-      height: 750px;
+    /* Footer Logo Section */
+    .widget-footer-logo {
+      text-align: center;
     }
 
-
-    /* .main {
-      display: block;
-      transition: opacity 0.5s ease-in-out;
+    .footer-logo-img {
+      max-width: 100%;
+      height: auto;
     }
 
-    #section2 {
-      display: none;
-    } */
-
-    h2 {
-      font-size: 25px;
+    .sub-description {
+      color: #777;
     }
 
-    a {
-      text-decoration: none;
-      color: #AAAAAA;
+    /* Footer Information Section */
+    .widget_nav_menu h4,
+    .widget_nav_menu ul,
+    .widget-footer-extras-container h4,
+    .widget-footer-extras-container ul {
+      margin: 0;
+      padding: 0;
     }
 
-    .text-logo {
-      color: #AAAAAA;
-    }
-
-    ul,
-    ol {
+    .menu-footer-information-container,
+    .menu-footer-extras-container {
       list-style: none;
     }
 
-    /* Tùy chỉnh màu sắc cho liên kết khi hover (nếu cần) */
-    a:hover {
-      color: #dec18c;
-      /* Màu sắc thay đổi khi di chuột vào liên kết */
+    .menu-footer-information-container a,
+    .menu-footer-extras-container a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    .p-color {
-      color: #dec18c;
+    .menu-footer-information-container a:hover,
+    .menu-footer-extras-container a:hover {
+      color: #ff6600;
+    }
+
+    /* Footer Contact Us Section */
+    .widget-title-s-font {
+      text-align: center;
+    }
+
+    .footer-contact-us {
+      list-style: none;
+      padding: 0;
     }
 
     .footer-contact-us li {
       margin-bottom: 10px;
-      display: flex;
-      align-items: center;
     }
 
-    .text-widge .footer-contact-us i {
-      margin-right: 5px;
-      /* Giảm khoảng cách bên phải của icon */
+    .footer-contact-us i {
+      margin-right: 10px;
     }
 
-    .text-widge .footer-contact-us span {
+    /* Bottom Bar Section */
+    .bottom-bar-wrapper {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .copyright {
       margin: 0;
-      /* Xóa margin mặc định của đoạn văn bản */
+    }
+
+    /* Payment Gate Section */
+    .widget-payment-gate {
+      text-align: right;
+    }
+
+    .payment-gate {
+      list-style: none;
+      padding: 0;
+    }
+
+    .payment-gate li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .payment-gate img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 
 <body>
-  <footer class="main-footer-wrapper light">
-    <div class="container">
-      <div class="footer-top-bar-wrapper">
-        <div class="container text-center">
-          <div class="row m-3 p-5 ">
-            <div class="col d-flex align-items-center justify-content-center">
-              <!-- Căn giữa cả theo chiều ngang và dọc -->
-              <a href="#" title="Partner 1">
-                <img src="/partner-1.jpg" alt="Partner 1" width="150px">
-              </a>
+  <!-- Your website content goes here -->
+  <main class="single-product-wrap">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="site-content-single-product col-md-12">
+                <div class="single-product-inner">
+                    <div class="woocommerce-notices-wrapper"></div>
+                    <div id="product-2239" class="product type-product post-2239 status-publish first instock product_cat-birthday-gifts has-post-thumbnail sale shipping-taxable product-type-grouped">
+                        <div class="single-product-info clearfix">
+                            <div class="single-product-image-wrap">
+                                <div class="single-product-image">
+                                    <div class="product-flash-wrap"></div>
+                                    <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+                                        <figure class="woocommerce-product-gallery__wrapper">
+                                            <div data-thumb="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18-150x150.jpg" data-thumb-alt class="woocommerce-product-gallery__image">
+                                                <a href="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg">
+                                                    <img width="600" height="600" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg" class="wp-post-image" alt title="product-18" data-caption data-src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg" data-large_image="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg" data-large_image_width="600" data-large_image_height="600" srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18-180x180.jpg 180w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                                </a>
+                                            </div>
+                                            <div data-thumb="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19-150x150.jpg" data-thumb-alt class="woocommerce-product-gallery__image">
+                                                <a href="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19.jpg">
+                                                    <img width="600" height="600" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19.jpg" class alt title="product-19" data-caption data-src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19.jpg" data-large_image="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19.jpg" data-large_image_width="600" data-large_image_height="600" srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19-180x180.jpg 180w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                                </a>
+                                            </div>
+                                            <div data-thumb="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-150x150.jpg" data-thumb-alt class="woocommerce-product-gallery__image">
+                                                <a href="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg">
+                                                    <img width="600" height="600" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg" class alt title="product-02" data-caption data-src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg" data-large_image="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg" data-large_image_width="600" data-large_image_height="600" srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-180x180.jpg 180w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                                </a>
+                                            </div>
+                                            <div data-thumb="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-5.fw_-150x150.png" data-thumb-alt class="woocommerce-product-gallery__image">
+                                                <a href="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-5.fw_.png">
+                                                    <img width="270" height="235" src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-5.fw_.png" class alt title="banner-5.fw" data-caption data-src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-5.fw_.png" data-large_image="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-5.fw_.png" data-large_image_width="270" data-large_image_height="235"/>
+                                                </a>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-product-wrap">
+                                <div class="summary-product entry-summary">
+                                    <h1 itemprop="name" class="product_title entry-title p-font">Birthday Gifts Grouped</h1>
+                                    <p class="price">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                            35.00
+                                        </span>
+                                    </p>
+                                    <div class="product-single-short-description" itemprop="description">
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo 2.</p>
+                                    </div>
+                                    <form class="cart grouped_form" action="https://themes.g5plus.net/handmade/product/birthday-gifts-products/" method="post" enctype="multipart/form-data">
+                                        <table cellspacing="0" class="woocommerce-grouped-product-list group_table">
+                                            <tbody>
+                                                <tr id="product-1555" class="woocommerce-grouped-product-list-item product type-product post-1555 status-publish instock product_cat-birthday-gifts product_cat-illumination product_cat-romantic product_cat-special-goods product_tag-birthday product_tag-illumination product_tag-romatic product_tag-special-goods has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                                    <td class="woocommerce-grouped-product-list-item__quantity">
+                                                        <div class="quantity">
+                                                            <div class="quantity-inner">
+                                                                <button class="btn-number" data-type="minus">
+                                                                    <i class="pe-7s-less"></i>
+                                                                </button>
+                                                                <input type="text" step="1" min="0" name="quantity[1555]" value="0" title="Qty" class="input-text qty text" size="4"/>
+                                                                <button class="btn-number" data-type="plus">
+                                                                    <i class="pe-7s-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="woocommerce-grouped-product-list-item__label">
+                                                        <label for="product-1555">
+                                                            <a href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower Bending</a>
+                                                        </label>
+                                                    </td>
+                                                    <td class="woocommerce-grouped-product-list-item__price">
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                            35.00
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="product-1546" class="woocommerce-grouped-product-list-item product type-product post-1546 status-publish instock product_cat-birthday-gifts product_cat-greeting-cards product_cat-illumination product_tag-birthday product_tag-greeting-cards has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                    <td class="woocommerce-grouped-product-list-item__quantity">
+                                                        <div class="quantity">
+                                                            <div class="quantity-inner">
+                                                                <button class="btn-number" data-type="minus">
+                                                                    <i class="pe-7s-less"></i>
+                                                                </button>
+                                                                <input type="text" step="1" min="0" name="quantity[1546]" value="0" title="Qty" class="input-text qty text" size="4"/>
+                                                                <button class="btn-number" data-type="plus">
+                                                                    <i class="pe-7s-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="woocommerce-grouped-product-list-item__label">
+                                                        <label for="product-1546">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-greeting-cards/">Birthday Greeting Cards</a>
+                                                        </label>
+                                                    </td>
+                                                    <td class="woocommerce-grouped-product-list-item__price">
+                                                        <del>
+                                                            <span class="woocommerce-Price-amount amount">
+                                                                <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                                40.00
+                                                            </span>
+                                                        </del>
+                                                        <ins>
+                                                            <span class="woocommerce-Price-amount amount">
+                                                                <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                                35.00
+                                                            </span>
+                                                        </ins>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <input type="hidden" name="add-to-cart" value="2239"/>
+                                        <button type="submit" class="single_add_to_cart_button button alt">Add to cart</button>
+                                    </form>
+                                    <div class="single-product-function">
+                                        <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2239 wishlist-fragment on-first-load" data-fragment-ref="2239" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:2239,&quot;parent_product_id&quot;:2239,&quot;product_type&quot;:&quot;grouped&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=2239" rel="nofollow" data-product-id="2239" data-product-type="grouped" data-original-product-id="2239" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                    <span>Add to Wishlist</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a title="Compare" href="https://themes.g5plus.net/handmade/product/birthday-gifts-products/?action=yith-woocompare-add-product&amp;id=2239" class="compare" data-product_id="2239">
+                                            <i class="fa fa-exchange"></i>
+                                            Compare
+                                        </a>
+                                    </div>
+                                    <div class="product_meta">
+                                        <span class="product-stock-status-wrapper">
+                                            <label>Availability:</label>
+                                            <span class="product_stock">
+                                                <span class="product-stock-status in-stock">In stock</span>
+                                            </span>
+                                        </span>
+                                        <span>
+                                            <label>Size:</label>
+                                            <span class="product_dimensions">N/A</span>
+                                        </span>
+                                        <span class="posted_in">
+                                            <label>Category:</label>
+                                            <a href="https://themes.g5plus.net/handmade/product-category/birthday-gifts/" rel="tag">Birthday Gifts</a>
+                                            .
+                                        </span>
+                                    </div>
+                                    <div class="social-share-wrap">
+                                        <label>Share:</label>
+                                        <ul class="social-share">
+                                            <li>
+                                                <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthemes.g5plus.net%2Fhandmade%2Fproduct%2Fbirthday-gifts-products%2F" target="_blank" rel="nofollow">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: window.open('http://twitter.com/share?text=Birthday Gifts Grouped&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/','_blank', 'width=900, height=450');" rel="nofollow">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: window.open('http://www.linkedin.com/shareArticle?mini=true&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&title=Birthday Gifts Grouped','_blank', 'width=500, height=450');" rel="nofollow">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: window.open('http://www.tumblr.com/share/link?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&name=Birthday Gifts Grouped','_blank', 'width=500, height=450');" rel="nofollow">
+                                                    <i class="fa fa-tumblr"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: window.open('http://pinterest.com/pin/create/button/?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&media=https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg&description=Birthday Gifts Grouped','_blank', 'width=900, height=450');" rel="nofollow">
+                                                    <i class="fa fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="woocommerce-tabs wc-tabs-wrapper">
+                            <ul class="tabs wc-tabs" role="tablist">
+                                <li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
+                                    <a href="#tab-description">Description </a>
+                                </li>
+                                <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+                                    <a href="#tab-reviews">Reviews (0) </a>
+                                </li>
+                            </ul>
+                            <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+                                <h2>Description</h2>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                            </div>
+                            <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+                                <div id="reviews" class="woocommerce-Reviews">
+                                    <div id="comments">
+                                        <h2 class="woocommerce-Reviews-title">Reviews</h2>
+                                        <p class="woocommerce-noreviews">There are no reviews yet.</p>
+                                    </div>
+                                    <div id="review_form_wrapper">
+                                        <div id="review_form">
+                                            <div id="respond" class="comment-respond">
+                                                <span id="reply-title" class="comment-reply-title">
+                                                    Be the first to review &ldquo;Birthday Gifts Grouped &rdquo;
+                                                    <small>
+                                                        <a rel="nofollow" id="cancel-comment-reply-link" href="/handmade/product/birthday-gifts-products/#respond" style="display:none;">Cancel reply</a>
+                                                    </small>
+                                                </span>
+                                                <p class="must-log-in">
+                                                    You must be <a href="https://themes.g5plus.net/handmade/my-account/">logged in</a>
+                                                    to post a review.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related products">
+                            <h4 class="widget-title">
+                                <span>Related Products</span>
+                            </h4>
+                            <div class="product-listing woocommerce clearfix product-slider">
+                                <div class="owl-carousel" data-plugin-options="{&quot;items&quot; :4,&quot;pagination&quot; : false, &quot;navigation&quot; : true,&quot;itemsDesktop&quot; : [1199,4], &quot;itemsDesktopSmall&quot; : [980,3], &quot;itemsTablet&quot; : [768, 3], &quot;itemsTabletSmall&quot;: [600, 2]}">
+                                    <div class="product-item-wrap rating-visible product type-product post-1555 status-publish first instock product_cat-birthday-gifts product_cat-illumination product_cat-romantic product_cat-special-goods product_tag-birthday product_tag-illumination product_tag-romatic product_tag-special-goods has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap">
+                                                    <span class="on-new product-flash">New</span>
+                                                </div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-17.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-17.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-17-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-17-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-17-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/flower-bending/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/flower-bending/?action=yith-woocompare-add-product&amp;id=1555" class="compare" data-product_id="1555">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1555 wishlist-fragment on-first-load" data-fragment-ref="1555" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1555,&quot;parent_product_id&quot;:2239,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1555" rel="nofollow" data-product-id="1555" data-product-type="simple" data-original-product-id="2239" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1555" href="https://themes.g5plus.net/handmade/product/flower-bending/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <div class="add-to-cart-wrap" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                                        <a href="?add-to-cart=1555" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn_add_to_cart" data-product_id="1555" data-product_sku aria-label="Add &ldquo;Flower Bending&rdquo; to your cart" rel="nofollow">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                                    <span style="width:80%">
+                                                        Rated <strong class="rating">4.00</strong>
+                                                        out of 5
+                                                    </span>
+                                                </div>
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower Bending</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        35.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-wrap rating-visible product type-product post-1549 status-publish last instock product_cat-birthday-gifts product_cat-illumination product_cat-love product_cat-romantic product_tag-birthday product_tag-illumination product_tag-love product_tag-romatic has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap">
+                                                    <span class="on-hot product-flash">Hot</span>
+                                                </div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-02-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-03-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/hearts-made-%e2%80%8b%e2%80%8bof-cotton/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/hearts-made-%e2%80%8b%e2%80%8bof-cotton/?action=yith-woocompare-add-product&amp;id=1549" class="compare" data-product_id="1549">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1549 wishlist-fragment on-first-load" data-fragment-ref="1549" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1549,&quot;parent_product_id&quot;:1549,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1549" rel="nofollow" data-product-id="1549" data-product-type="simple" data-original-product-id="1549" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1549" href="https://themes.g5plus.net/handmade/product/hearts-made-%e2%80%8b%e2%80%8bof-cotton/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <div class="add-to-cart-wrap" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                                        <a href="?add-to-cart=1549" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn_add_to_cart" data-product_id="1549" data-product_sku="2" aria-label="Add &ldquo;Hearts Made ​​Of Cotton&rdquo; to your cart" rel="nofollow">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                                    <span style="width:100%">
+                                                        Rated <strong class="rating">5.00</strong>
+                                                        out of 5
+                                                    </span>
+                                                </div>
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/hearts-made-%e2%80%8b%e2%80%8bof-cotton/">Hearts Made ​​Of Cotton</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        40.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-wrap rating-visible product type-product post-1550 status-publish first instock product_cat-birthday-gifts product_cat-illumination product_cat-romantic product_cat-special-goods product_tag-illumination product_tag-romatic has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap">
+                                                    <span class="on-hot product-flash">Hot</span>
+                                                </div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-10.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-10.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-10-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-10-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-10-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-09-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/gift-boxes/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/gift-boxes/?action=yith-woocompare-add-product&amp;id=1550" class="compare" data-product_id="1550">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1550 wishlist-fragment on-first-load" data-fragment-ref="1550" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1550,&quot;parent_product_id&quot;:1550,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1550" rel="nofollow" data-product-id="1550" data-product-type="simple" data-original-product-id="1550" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1550" href="https://themes.g5plus.net/handmade/product/gift-boxes/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <div class="add-to-cart-wrap" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                                        <a href="?add-to-cart=1550" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn_add_to_cart" data-product_id="1550" data-product_sku aria-label="Add &ldquo;Gift Boxes&rdquo; to your cart" rel="nofollow">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                                    <span style="width:80%">
+                                                        Rated <strong class="rating">4.00</strong>
+                                                        out of 5
+                                                    </span>
+                                                </div>
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/gift-boxes/">Gift Boxes</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        40.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-wrap rating-visible product type-product post-1565 status-publish last instock product_cat-birthday-gifts product_cat-every-day product_cat-jewelry product_cat-personal product_tag-birthday product_tag-jewelry product_tag-person has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap"></div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-12.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-12.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-12-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-12-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-12-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-14-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/colorful-bracelet/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/colorful-bracelet/?action=yith-woocompare-add-product&amp;id=1565" class="compare" data-product_id="1565">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1565 wishlist-fragment on-first-load" data-fragment-ref="1565" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1565,&quot;parent_product_id&quot;:1565,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1565" rel="nofollow" data-product-id="1565" data-product-type="simple" data-original-product-id="1565" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1565" href="https://themes.g5plus.net/handmade/product/colorful-bracelet/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <div class="add-to-cart-wrap" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                                        <a href="?add-to-cart=1565" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn_add_to_cart" data-product_id="1565" data-product_sku aria-label="Add &ldquo;Colorful Bracelet&rdquo; to your cart" rel="nofollow">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/colorful-bracelet/">Colorful Bracelet</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        40.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-wrap rating-visible product type-product post-1545 status-publish first instock product_cat-birthday-gifts product_cat-every-day product_cat-illumination product_cat-jewelry product_cat-personal product_cat-special-goods product_tag-every-day product_tag-illumination product_tag-jewelry product_tag-special-goods has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap">
+                                                    <span class="on-new product-flash">New</span>
+                                                </div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-07.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-07.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-07-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-07-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-07-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-05-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/earrings/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/earrings/?action=yith-woocompare-add-product&amp;id=1545" class="compare" data-product_id="1545">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1545 wishlist-fragment on-first-load" data-fragment-ref="1545" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1545,&quot;parent_product_id&quot;:1545,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1545" rel="nofollow" data-product-id="1545" data-product-type="simple" data-original-product-id="1545" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1545" href="https://themes.g5plus.net/handmade/product/earrings/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <div class="add-to-cart-wrap" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                                        <a href="?add-to-cart=1545" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart btn_add_to_cart" data-product_id="1545" data-product_sku aria-label="Add &ldquo;Earrings&rdquo; to your cart" rel="nofollow">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="star-rating" role="img" aria-label="Rated 4.50 out of 5">
+                                                    <span style="width:90%">
+                                                        Rated <strong class="rating">4.50</strong>
+                                                        out of 5
+                                                    </span>
+                                                </div>
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/earrings/">Earrings</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        40.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-wrap rating-visible product type-product post-1558 status-publish last outofstock product_cat-birthday-gifts product_cat-illumination product_cat-jewelry product_cat-personal product_tag-birthday product_tag-illumination product_tag-jewelry product_tag-person has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes">
+                                        <div class="product-item-inner">
+                                            <div class="product-thumb">
+                                                <div class="product-flash-wrap">
+                                                    <span class="on-hot product-flash">Hot</span>
+                                                    <span class="on-sold product-flash">Sold</span>
+                                                </div>
+                                                <div class="product-thumb-primary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-08.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt srcset="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-08.jpg 600w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-08-150x150.jpg 150w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-08-300x300.jpg 300w, https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-08-180x180.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                </div>
+                                                <div class="product-thumb-secondary">
+                                                    <img width="300" height="300" src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-14-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt/>
+                                                </div>
+                                                <a class="product-link" href="https://themes.g5plus.net/handmade/product/friendship-bracelets/"></a>
+                                                <div class="product-actions">
+                                                    <a data-toggle="tooltip" data-placement="top" title="Compare" href="https://themes.g5plus.net/handmade/product/friendship-bracelets/?action=yith-woocompare-add-product&amp;id=1558" class="compare" data-product_id="1558">
+                                                        <i class="fa fa-exchange"></i>
+                                                    </a>
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1558 wishlist-fragment on-first-load" data-fragment-ref="1558" data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/product\/birthday-gifts-products?page&amp;product=birthday-gifts-products&amp;post_type=product&amp;name=birthday-gifts-products&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/themes.g5plus.net\/handmade\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1558,&quot;parent_product_id&quot;:1558,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                        <div class="yith-wcwl-add-button">
+                                                            <a href="https://themes.g5plus.net/handmade/product/birthday-gifts-products?page&#038;product=birthday-gifts-products&#038;post_type=product&#038;name=birthday-gifts-products&#038;add_to_wishlist=1558" rel="nofollow" data-product-id="1558" data-product-type="variable" data-original-product-id="1558" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
+                                                                <span>Add to Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a data-toggle="tooltip" data-placement="top" title="Quick view" class="product-quick-view" data-product_id="1558" href="https://themes.g5plus.net/handmade/product/friendship-bracelets/">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <a href="https://themes.g5plus.net/handmade/product/friendship-bracelets/" class="product_type_soldout btn_add_to_cart" data-toggle="tooltip" data-placement="top" title="Sold out">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="star-rating" role="img" aria-label="Rated 2.00 out of 5">
+                                                    <span style="width:40%">
+                                                        Rated <strong class="rating">2.00</strong>
+                                                        out of 5
+                                                    </span>
+                                                </div>
+                                                <h3 class="product-name p-font">
+                                                    <a href="https://themes.g5plus.net/handmade/product/friendship-bracelets/">Friendship Bracelets</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        40.00
+                                                    </span>
+                                                    &ndash;
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                        45.00
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col d-flex align-items-center justify-content-center">
-              <!-- Căn giữa cả theo chiều ngang và dọc -->
-              <a href="#" title="Partner 1">
-                <img src="/partner-2.jpg" alt="Partner 1" width="110px">
-              </a>
-            </div>
-            <div class="col d-flex align-items-center justify-content-center">
-              <!-- Căn giữa cả theo chiều ngang và dọc -->
-              <a href="#" title="Partner 1">
-                <img src="/partner-3.jpg" alt="Partner 1" width="110px">
-              </a>
-            </div>
-            <div class="col d-flex align-items-center justify-content-center">
-              <!-- Căn giữa cả theo chiều ngang và dọc -->
-              <a href="#" title="Partner 1">
-                <img src="/partner-4.jpg" alt="Partner 1" width="150px">
-              </a>
-            </div>
-            <div class="col d-flex align-items-center justify-content-center">
-              <!-- Căn giữa cả theo chiều ngang và dọc -->
-              <a href="#" title="Partner 1">
-                <img src="/partner-5.jpg" alt="Partner 1" width="110px">
-              </a>
-            </div>
-            <!-- <div class="col d-flex align-items-center justify-content-center">
-
-                <a href="#" title="Partner 1">
-                    <img src="/partner-2 (1).jpg" alt="Partner 1" width="110px">
-                </a>
-            </div> -->
-          </div>
         </div>
-
-        <!-- <div class="container-fluid text-center ">
-    <div class="row align-items-center ">
-      <div class="col text-end  border-end khoi p-4 main" id="section1">
-        <span> <i class="fas fa-location-dot "></i> <a href="#section2" onclick="toggleSections()">SEE MAP</a></span>
-      </div>
-      <div class="col text-start border-start khoi p-4 ">
-        <span> <i class="fa-solid fa-circle-arrow-up "></i> SCROLL UP</span>
-      </div>
     </div>
-  </div>
-  <div class="main" id="section2">
-    <img src="/Screenshot 2023-12-29 135033.png" alt="Partner 1" width="1000px">
-    <a href="#section1" onclick="toggleSections()"></a>
-  </div> -->
-        <div class="container-fluid">
-          <div class="container-fluid text-center main" id="section1">
-            <div class="row alight-iteam-center">
-              <div class="col text-end  border-end khoi p-4">
-                <a href="#" id="scrollToSection2"><span> <i class="fas fa-location-dot"></i> SEE MAP</span></a>
-              </div>
-              <div class="col text-start border-start khoi p-4">
-                <span> <i class="fa-solid fa-circle-arrow-up "></i><a href="#"></a> SCROLL UP</span>
+</main>
+  <!-- Footer Section -->
+  <footer class="main-footer-wrapper light">
+    <div id="wrapper-footer">
+      <div class="main-footer">
+        <div class="footer_inner clearfix">
+          <div class="footer-top-bar-wrapper">
+            <div class="footer-top-bar-inner">
+              <div class="full">
+                <div class=" sidebar">
+                  <aside id="handmade-partner-carousel-4" class="widget widget-partner-carousel">
+                    <div class="container">
+                      <div class="partner-wrap col-md-12 owl-carousel "
+                        data-plugin-options="{ &quot;items&quot; : 5,&quot;pagination&quot;: false, &quot;navigation&quot;: false, &quot;autoPlay&quot;: true}">
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage Old">
+                            <img src="/public/images/partner-1.jpg" alt="Vintage Old" />
+                          </a>
+                        </div>
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage">
+                            <img src="/public/images/partner-2.jpg" alt="Vintage" />
+                          </a>
+                        </div>
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage Interior">
+                            <img src="/public/images/partner-3.jpg" alt="Vintage Interior" />
+                          </a>
+                        </div>
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage Design">
+                            <img src="/public/images/partner-4.jpg" alt="Vintage Design" />
+                          </a>
+                        </div>
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage">
+                            <img src="/public/images/partner-5.jpg" alt="Vintage" />
+                          </a>
+                        </div>
+                        <div class="partner content-middle-inner">
+                          <a href="#" title="Vintage">
+                            <img src="/public/images/partner-2 (1).jpg" alt="Vintage" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                  <aside id="handmade-map-scroll-up-3" class="widget widget-map-scroll-up">
+                    <div class="map-scroll-up">
+                      <div class="link-wrap">
+                        <div class="map col-md-6 col-sm-6 col-xs-6">
+                          <a href="javascript:;" class="a-map p-color-hover">
+                            <i class="pe-7s-map-marker pe-lg pe-va"></i>
+                            <span>See map</span>
+                          </a>
+                        </div>
+                        <div class="scroll-up col-md-6 col-sm-6 col-xs-6">
+                          <a href="javascript:;" class="a-scroll-up p-color-hover">
+                            <i class="pe-7s-up-arrow"></i>
+                            <span>Scroll up</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="handmade-map container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="handmade-google-map " data-location-x="40.6700" data-location-y="-73.9400"
+                              data-marker-title="Google map" style="height:450px" data-map-zoom="12"
+                              data-map-style="none"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="main" id="section2">
-            <h2>. </h2>
-            <!-- Content of Section 2 goes here -->
-            <a href="#section1"></a>
+          <div class="footer_top_holder col-4">
+            <div class="container">
+              <div class="row footer-top-col-4 footer-1">
+                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-1">
+                  <aside id="wolverine-footer-logo-2" class="widget widget-footer-logo">
+                    <div class="footer-logo">
+                      <a href="https://themes.g5plus.net/handmade">
+                        <img class="footer-logo-img"
+                          src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png" alt="Handmade" />
+                      </a>
+                      <div class="sub-description">Letterpress, gold foil stamping, and more. Quality, sustainable
+                        materials like thick 100% PCW paper and veg-based inks.</div>
+                    </div>
+                  </aside>
+                </div>
+                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-2">
+                  <aside id="nav_menu-3" class="widget widget_nav_menu">
+                    <h4 class="widget-title">
+                      <span>Information</span>
+                    </h4>
+                    <div class="menu-footer-information-container">
+                      <ul id="menu-footer-information" class="menu">
+                        <li id="menu-item-2430"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2430">
+                          <a href="#">About Us</a>
+                        </li>
+                        <li id="menu-item-2431"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2431">
+                          <a href="#">Delivery Information</a>
+                        </li>
+                        <li id="menu-item-2432"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2432">
+                          <a href="#">Privacy policy</a>
+                        </li>
+                        <li id="menu-item-2433"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2433">
+                          <a href="#">Terms &#038;Conditions</a>
+                        </li>
+                        <li id="menu-item-2434"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2434">
+                          <a href="#">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+                </div>
+                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-3">
+                  <aside id="nav_menu-4" class="widget widget_nav_menu">
+                    <h4 class="widget-title">
+                      <span>Extras</span>
+                    </h4>
+                    <div class="menu-footer-extras-container">
+                      <ul id="menu-footer-extras" class="menu">
+                        <li id="menu-item-2435"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2435">
+                          <a href="#">Brands</a>
+                        </li>
+                        <li id="menu-item-2436"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2436">
+                          <a href="#">Gift Vouchers</a>
+                        </li>
+                        <li id="menu-item-2437"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2437">
+                          <a href="#">Affiliates</a>
+                        </li>
+                        <li id="menu-item-2438"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2438">
+                          <a href="#">Specials</a>
+                        </li>
+                        <li id="menu-item-2439"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2439">
+                          <a href="#">Site Map</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+                </div>
+                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-4">
+                  <aside id="text-2" class="widget-title-s-font widget widget_text">
+                    <h4 class="widget-title">
+                      <span>Contact us</span>
+                    </h4>
+                    <div class="textwidget">
+                      <ul class="footer-contact-us">
+                        <li>
+                          <i class="fa fa-map-marker p-color"></i>
+                          <span>Great Store London Oxford Street, 012 United Kingdom. </span>
+                        </li>
+                        <li>
+                          <i class="fa fa-envelope p-color"></i>
+                          <span>emailgreatstore@gmail.com </span>
+                        </li>
+                        <li>
+                          <i class="fa fa-phone p-color"></i>
+                          <span>(+92) 3456 7890 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <script>
-          document.getElementById('scrollToSection2').addEventListener('click', function (event) {
-            event.preventDefault();
-
-            // Hiển thị Section 2
-            document.getElementById('section2').style.display = 'block';
-
-            // Cuộn mượt xuống Section 2
-            document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
-          });
-        </script>
-        <div class="container-fluid text-start">
-          <div class="row align-items-center m-3 p-5">
-            <div class="col">
-              <div class="footer-logo ">
-                <a href="#">
-                  <img class="footer-logo-img" src="/logo.png">
-                </a>
-                <div class="text-logo">
-                  Letterpress, gold foil stamping, and more. Quality, sustainable materials like thick 100% PCW paper
-                  and
-                  veg-based inks.
-                </div>
+      </div>
+      <div class="bottom-bar-wrapper">
+        <div class="bottom-bar-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 sidebar text-left">
+                <aside id="text-3" class="copyright margin-top-10 widget widget_text">
+                  <div class="textwidget">
+                    <div>© Copyright 2015. Powered by WordPress.</div>
+                    <div>Theme made by G5Theme</div>
+                  </div>
+                </aside>
               </div>
-            </div>
-            <div class="col">
-              <div class="widget widget_nav_menu p-5">
-                <h2 class="widget-title m-4 ">
-                  Imformation
-                </h2>
-                <div class="menu-footer-information-container  ">
-                  <ul id="menu-footer-information" class="menu">
+              <div class="col-md-6 sidebar text-right">
+                <aside id="handmade-payment-gate-2" class="widget widget-payment-gate">
+                  <ul class="payment-gate">
                     <li>
-                      <a href="#">About Us</a>
+                      <a target="_blank" href="http://www.mastercard.com" title="Master card">
+                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/master_card.jpg"
+                          alt="Master card" />
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Delivery Imformation</a>
+                      <a target="_blank" href="http://www.visa.com" title="Visa">
+                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/visa.jpg" alt="Visa" />
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Privacy policy</a>
+                      <a target="_blank" href="https://www.paypal.com" title="Paypal">
+                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg"
+                          alt="Paypal" />
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Terms & Conditions</a>
+                      <a target="_blank" href="https://www.americanexpress.com/" title="American Express">
+                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
+                          alt="American Express" />
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <a target="_blank" href="https://www.westernunion.com" title="Weston Union">
+                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/weston_union.jpg"
+                          alt="Weston Union" />
+                      </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="widget widget_nav_menu p-5">
-                <h2 class="widget-title m-4">
-                  Extras
-                </h2>
-                <div class="menu-footer-information-container">
-                  <ul id="menu-footer-information" class="menu">
-                    <li>
-                      <a href="#">Brands</a>
-                    </li>
-                    <li>
-                      <a href="#">Gift Vouchers</a>
-                    </li>
-                    <li>
-                      <a href="#">Affiliates</a>
-                    </li>
-                    <li>
-                      <a href="#">Specials</a>
-                    </li>
-                    <li>
-                      <a href="#">Site Map</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="widget-title-s-font widget widget_text ">
-                <h4 class="widget-title m-4">
-                  Contact us
-                </h4>
-                <div class="text-widge">
-                  <ul class="footer-contact-us">
-                    <li>
-                      <i class="fa fa-map-marker p-color"></i>
-                      <span> Great Store London Oxford Street, 012 United Kingdom</span>
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope p-color"></i>
-                      <span>emailgreatstore@gmail.com </span>
-                    </li>
-                    <li>
-                      <i class="fa fa-phone p-color"></i>
-                      <span>(+92) 3456 7890</span>
-                    </li>
-                  </ul>
-                </div>
+                </aside>
               </div>
             </div>
           </div>
@@ -316,17 +932,11 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&#038;language=en_US&#038;key=AIzaSyDiMIj9qJw-InawUWnu7kUK4GjDQ7dktMQ&#038;ver=5.3.16"></script>
+  <script data-minify="1" type="text/javascript"
+    src="https://themes.g5plus.net/handmade/wp-content/cache/min/1/handmade/wp-content/plugins/handmade-framework/includes/shortcodes/google-map/assets/js/google-map-26bf64f4570889bb0fbecd8e0039862f.js"></script>
+
 </body>
 
 </html>
-<!-- <div class="main" id="section1">
-  <h2>Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
-</div>
-
-<div class="main" id="section2">
-  <img src="/partner-1.jpg" alt="Partner 1" width="5000px">
-  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
-</div> -->

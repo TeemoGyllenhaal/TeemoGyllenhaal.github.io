@@ -1,4 +1,3 @@
-
 .language-currency {
     display: flex;
     align-items: center;
@@ -94,12 +93,14 @@
     color: #dec18c;
     padding-right: 15px;
 }
+
 .my-account,
 .wishlist,
 .blog,
-.login{
+.login {
     padding-right: 15px;
 }
+
 .nav-menu a:hover {
     color: #dec18c;
 }
@@ -109,70 +110,80 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .icon-header {
     display: flex;
 }
+
 .icon-header a {
-    color:#dec18c;
+    color: #dec18c;
 }
-.logo img{
+
+.logo img {
     max-height: 134px;
     padding-top: 25px;
-    padding-bottom:25px ;
+    padding-bottom: 25px;
 }
-.header-bottom{
+
+.header-bottom {
     font-family: "Varela Round";
     display: flex;
 }
 
-.header-bottom .bomttom-menu-left > ul {
+.header-bottom .bomttom-menu-left>ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.header-bottom .bomttom-menu-left > ul > li {
+.header-bottom .bomttom-menu-left>ul>li {
     margin-right: 20px;
 }
 
-.header-bottom .bomttom-menu-left > ul > li > a {
+.header-bottom .bomttom-menu-left>ul>li>a {
     text-decoration: none;
     color: #878787;
     transition: color 0.2s ease;
 }
 
-.header-bottom .bomttom-menu-left > ul > li > a:hover {
+.header-bottom .bomttom-menu-left>ul>li>a:hover {
     color: #dec18c;
 }
 
-.header-bottom{
+.header-bottom {
     font-family: "Varela Round";
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-bottom a{
+
+.header-bottom a {
     text-decoration: none;
-    color: #878787;    
+    color: #878787;
 }
-.header-bottom  a:hover{
+
+.header-bottom a:hover {
     color: #dec18c;
 }
-.header-bottom .bomttom-menu-left > ul,
-.header-bottom .bomttom-menu-left > ul ul {
+
+.header-bottom .bomttom-menu-left>ul,
+.header-bottom .bomttom-menu-left>ul ul {
     padding: 0;
     margin: 0;
 }
-.bottom-menu{
-    display:flex;
-    align-items: center;
-}
-.bottom-menu-right{
+
+.bottom-menu {
     display: flex;
     align-items: center;
-    margin-left:auto;
 }
+
+.bottom-menu-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
 .bomttom-menu-left {
     margin-right: auto;
 }
@@ -189,15 +200,17 @@
 .twitter a,
 .facebook a,
 .vimeo a,
-.pinterest a{
+.pinterest a {
     color: #dec18c;
-}    
+}
+
 .twitter a:hover,
 .facebook a:hover,
 .vimeo a:hover,
-.pinterest a:hover{
+.pinterest a:hover {
     color: #878787;
 }
+
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -215,64 +228,76 @@
 .home i {
     margin: 0 5px;
 }
-.home li  {
+
+.home li {
     text-decoration: none;
-    color :#dec18c;
+    color: #dec18c;
 }
-.home li a  {
+
+.home li a {
     text-decoration: none;
-    color :#dec18c;
+    color: #dec18c;
 }
-.block-center-inner{
+
+.block-center-inner {
     text-align: center;
     max-width: 100%;
 }
-.form-container{
-    display:flex;
+
+.form-container {
+    display: flex;
 }
+
 .login .form-container {
     display: flex;
     justify-content: space-between;
 }
 
 .login .form-login {
-    width: 49%; /* Điều chỉnh độ rộng của form-login */
-    margin-right: 2%; /* Khoảng cách giữa form-login và form-signup */
+    width: 49%;
+    /* Điều chỉnh độ rộng của form-login */
+    margin-right: 2%;
+    /* Khoảng cách giữa form-login và form-signup */
 }
 
 .login .form-signup {
-    width: 49%; /* Điều chỉnh độ rộng của form-signup */
+    width: 49%;
+    /* Điều chỉnh độ rộng của form-signup */
 }
+
 .form-Login input[type="text"],
 .form-Login input[type="password"],
 .form-Signup input[type="email"],
 .form-Signup input[type="password"] {
     width: 100%;
-    padding: 10px; 
-    box-sizing: border-box; 
+    padding: 10px;
+    box-sizing: border-box;
     margin-bottom: 15px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color:#EEEEEE;
+    background-color: #EEEEEE;
     text-align: center;
 }
+
 .form-Login h2,
 .form-Signup h2 {
     text-align: center;
 }
+
 .form-Login input[type="text"]:focus,
 .form-Login input[type="password"]:focus,
 .form-Signup input[type="email"]:focus,
 .form-Signup input[type="password"]:focus {
-    outline: none; 
-    border: 1px solid  #dec18c;
+    outline: none;
+    border: 1px solid #dec18c;
 }
+
 .form-Signup,
 .form-Login {
-    border: 1px solid #EEEEEE; 
-    background-color: #fff; 
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .page-title-inner {
@@ -284,4 +309,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.form-Login button,
+.form-Signup button {
+    color: #fff;
+    background-color: #dec18c;
+    border: none;
+    padding: 10px 30px;
+}
+
+.form-Login button:hover,
+.form-Signup button:hover{
+    background-color:#515151;
+    transition: background-color 0.4s ease;
 }

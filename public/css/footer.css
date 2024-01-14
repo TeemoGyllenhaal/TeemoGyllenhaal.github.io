@@ -224,7 +224,7 @@
   #section2 {
     display: none;
     /* Đặt hình nền cho Section 2 */
-    background-image: url('/public/images/Screenshot\ 2023-12-29\ 135033.png');
+    background-image: url('/public/images/download\ \(5\).jpg');
     background-size: cover;
     /* Điều chỉnh dựa trên nhu cầu cụ thể của bạn */
     background-repeat: no-repeat;
@@ -417,19 +417,11 @@
   transition: color 0.3s ease; /* Hiệu ứng chữ đổi màu */
 }
 
-.menu-footer-information-container ul li:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px; /* Điều chỉnh vị trí của gạch chân */
-  width: 100%;
-  border-bottom: 1px solid transparent; /* Bắt đầu với gạch chân trong suốt */
-  transition: border-color 0.3s ease; /* Hiệu ứng chữ đổi màu */
-}
 
 /* Hiển thị gạch chân và đổi màu chữ khi hover */
 .menu-footer-information-container ul li:hover {
   color: #dec18c; /* Màu chữ khi hover */
+  transform: translateX(10px);
 }
 
 .menu-footer-information-container ul li:hover:before {

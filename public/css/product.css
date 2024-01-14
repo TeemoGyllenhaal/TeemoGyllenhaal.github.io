@@ -1,3 +1,23 @@
+.home i {
+    margin: 0 5px;
+}
+
+.home li {
+    text-decoration: none;
+    color: #dec18c;
+    list-style: none;
+}
+
+.home li a {
+    text-decoration: none;
+    color: #dec18c;
+    list-style: none;
+}
+
+.product li {
+    list-style: none;
+    text-decoration: none;
+}
 body {
     font-family: Arial, sans-serif;
 }

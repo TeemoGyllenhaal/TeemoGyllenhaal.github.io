@@ -69,12 +69,10 @@
     margin-top: 5px;
 }
 
-.banner-1{
-    margin-top: 50px;
-}
 
 
-.banner-2 {
+
+.banner_2 {
     position: relative;
     padding-bottom: 5px;
 }
@@ -90,7 +88,7 @@
     margin-bottom: 10px;
 }
 
-.border-banner-2 {
+.border-banner_2 {
     display: block;
     position: absolute;
     border: 2px solid;
@@ -153,16 +151,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid #c29938; /* Màu primary-color */
+    border: 2px solid #c29938;
+    /* Màu primary-color */
     transition: all 0.3s;
     z-index: -1;
     width: 100%;
     height: 100%;
-    transform: translate(0, 0); /* Giữ vị trí ban đầu */
+    transform: translate(0, 0);
+    /* Giữ vị trí ban đầu */
 }
 
 .black-box:hover::after {
-    transform: translate(15px, 15px); /* Di chuyển về phải 15px và xuống 15px */
+    transform: translate(15px, 15px);
+    /* Di chuyển về phải 15px và xuống 15px */
 }
 
 .centered-btn {
@@ -182,7 +183,8 @@
     padding-left: 7px;
     padding-right: 20px;
     background-color: #6c757d !important;
-    transition: all 0.3s; /* Thêm hiệu ứng chuyển động */
+    transition: all 0.3s;
+    /* Thêm hiệu ứng chuyển động */
     border-color: #6c757d !important;
 }
 
@@ -193,7 +195,8 @@
     padding-left: 0.75rem;
     transition: all 0.3s;
 }
-.btn-desc{
+
+.btn-desc {
     font-size: 15px !important;
     line-height: 1.6 !important;
     font-weight: 400 !important;
@@ -201,6 +204,7 @@
     font-family: "Varela Round" !important;
     font-style: normal !important;
 }
+
 .bottom-right-container {
     right: 30px;
     position: absolute;
@@ -216,17 +220,47 @@
     background-color: #fff;
 }
 
+.bottom-center-container {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    bottom: 50%;
+    /* Đặt ở giữa theo chiều cao */
+    left: 50%;
+    /* Đặt ở giữa theo chiều rộng */
+    transform: translate(-50%, 50%);
+    /* Dịch chuyển về giữa */
+    opacity: .98;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 60px 45px;
+    background-color: #fff;
+}
+
+
+.bg-img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .sc-product-categories-home-wrap.style-01 {
     width: 290px;
     position: absolute;
     z-index: 4;
-    top: 180px;
-    left: 95px;
+    top: 0;
+    left: 0;
     -webkit-transform: translate(50px, 60px);
     -moz-transform: translate(50px, 60px);
     -ms-transform: translate(50px, 60px);
     -o-transform: translate(50px, 60px);
     transform: translate(50px, 60px);
+    background-color: #dec18c;
+}
+
+.mobile-product {
     background-color: #dec18c;
 }
 
@@ -290,6 +324,7 @@ content-middle-inner {
     text-align: center;
 }
 
-.new-arrival-1{
-    margin-top:40px;
+
+.new-arrival-1 {
+    margin-top: 40px;
 }

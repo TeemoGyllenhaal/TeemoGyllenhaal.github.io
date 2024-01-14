@@ -188,12 +188,50 @@
         margin-bottom: 10px; /* Khoảng cách giữa các mục */
     }
 
-    /* Thiết lập màu chữ cho biểu tượng */
-    .footer-contact-us i {
-        margin-right: 10px; /* Khoảng cách từ phải sang của biểu tượng */
-        color: #007bff; /* Màu chữ cho biểu tượng */
-    }
+  .p-3:hover span {
+    color: #dec18c;
+    /* Màu chữ khi di chuột vào */
+  }
 
+  .khoi {
+    width: 100%;
+    background-color: #F9F9F9;
+    height: 65px;
+    text-decoration: none;
+  }
+
+  span:hover {
+    color: #dec18c;
+    text-decoration: none;
+  }
+
+  .map-container {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 
+  section {
+    padding: 60px 0;
+  } */
+
+  #section2 {
+    display: none;
+    /* Đặt hình nền cho Section 2 */
+    background-image: url('/public/images/Screenshot\ 2023-12-29\ 135033.png');
+    background-size: cover;
+    /* Điều chỉnh dựa trên nhu cầu cụ thể của bạn */
+    background-repeat: no-repeat;
+    /* Ngăn chặn hình nền từ việc lặp lại */
+    /* Thêm các thuộc tính nền khác nếu cần */
+    height: 700px;
+  }
 
     /* Thiết lập phần chứa các cột trong footer-top-col-4 */
     /* Thiết lập phần chứa các cột trong footer-top-col-4 */
@@ -248,4 +286,152 @@
     .menu-footer-information-container ul.menu li a:hover {
         color: #F8DE7E;
     }
+  .footer-contact-us li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
 
+  .text-widge .footer-contact-us i {
+    margin-right: 5px;
+    /* Giảm khoảng cách bên phải của icon */
+  }
+
+  .text-widge .footer-contact-us span {
+    margin: 0;
+    /* Xóa margin mặc định của đoạn văn bản */
+  }
+/* Xóa gạch chân dưới các thẻ a trong phần "Information" */
+#menu-footer-information a {
+  text-decoration: none;
+  color: #AAA;
+}
+
+/* Xóa gạch chân dưới các thẻ a trong phần "Extras" */
+#menu-footer-extras a {
+  text-decoration: none;
+  color: #AAA;
+}
+#menu-footer-information a:hover{
+  color: #dec18c;
+    /* Màu sắc thay đổi khi di chuột vào liên kết */
+}
+#scrollToSection2 {
+  text-decoration: none;
+}
+.text-center .row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.text-center .col-12 {
+  flex: 0 0 auto;
+}
+
+.text-center .col-12.col-md-4.col-lg-2 {
+  flex: 0 0 calc(20% - 20px); /* 20% width with 20px spacing between items */
+  margin-right: 20px;
+}
+
+.text-center .col-12:last-child {
+  margin-right: 0;
+}
+
+
+.bottom-bar-wrapper {
+  background-color: #FFFFFF;
+  color: #000000; /* Màu chữ sẽ được chọn tùy thuộc vào màu nền để đảm bảo độ đọc tốt */
+}
+
+/* Tùy chỉnh màu chữ nếu cần thiết */
+
+.widget-payment-gate img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .bottom-bar-inner {
+      text-align: center;
+  }
+
+  .col-md-6.sidebar.text-left,
+  .col-md-6.sidebar.text-right {
+      margin-top: 10px;
+      text-align: center;
+  }
+}
+
+/* Thay đổi màu chữ của textwidget thành màu AAA (#AAA) */
+
+.textwidget div {
+  color: #AAA !important;
+}
+
+/* Sắp xếp payment-gate nằm cuối trang bên phải */
+
+.sidebar.text-right {
+  display: flex;
+  flex-direction: column-reverse; /* Đảo ngược thứ tự của cột */
+}
+
+.widget-payment-gate {
+  align-self: flex-end; /* Đặt ở cuối cùng bên phải */
+}
+
+/* Đảm bảo các ảnh trong payment-gate nằm theo hàng ngang */
+.widget-payment-gate .payment-gate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Đặt ở cuối hàng ngang */
+}
+
+/* Điều chỉnh độ rộng và khoảng cách giữa các ảnh */
+.widget-payment-gate .payment-gate li {
+  flex: 0 0 20%; /* Đặt độ rộng cố định, ví dụ: 20% */
+  max-width: 14%; /* Độ rộng tối đa */
+  margin: 0 10px 10px 0; /* Khoảng cách giữa các ảnh */
+}
+
+.widget-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+.widget-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  transition: color 0.3s ease; /* Hiệu ứng chữ đổi màu */
+}
+
+.menu-footer-information-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-footer-information-container ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Hiệu ứng chữ đổi màu */
+}
+
+.menu-footer-information-container ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Điều chỉnh vị trí của gạch chân */
+  width: 100%;
+  border-bottom: 1px solid transparent; /* Bắt đầu với gạch chân trong suốt */
+  transition: border-color 0.3s ease; /* Hiệu ứng chữ đổi màu */
+}
+
+/* Hiển thị gạch chân và đổi màu chữ khi hover */
+.menu-footer-information-container ul li:hover {
+  color: #dec18c; /* Màu chữ khi hover */
+}
+
+.menu-footer-information-container ul li:hover:before {
+  border-color: #dec18c; /* Hiển thị gạch chân khi hover */
+}

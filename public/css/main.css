@@ -213,15 +213,52 @@
 .navbar-nav .nav-item {
     white-space: nowrap;
 }
-.bottom-menu-center{
+
+.bottom-menu-center {
     background-color: #fff;
 }
+
 #navbarNav a {
     color: #dec18c;
 }
-.icon-mobile i{
+
+.icon-mobile i {
     color: #dec18c;
 }
+
+.row {
+    display: flex;
+}
+
+.wbp_text_column {
+    min-height: 187px;
+    padding-top: 50px;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    margin-top: 40px;
+}
+
+.wbp_text_column:hover {
+    background-color: #dec18c;
+}
+
+.wbp_text_column p {
+    color: #aaa;
+}
+
+.wbp_text_column p:hover {
+    color: #fff;
+}
+
+.handmade-post {
+    margin-bottom: 40px;
+}
+
+.handmade-post h2 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
 
 .font-main {
     font-family: "Varela Round";
@@ -237,4 +274,5 @@
 
 .entry-title{
     color: black !important;
+
 }

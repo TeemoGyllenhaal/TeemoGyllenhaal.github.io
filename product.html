@@ -8,373 +8,370 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Birthday Gifts Grouped &#8211;HandMade</title>
+    <title>Birthday Gifts Grouped</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/public/css/product.css">
     <link rel="stylesheet" href="public\css\main.css">
     <link rel="stylesheet" href="public\css\footer.css">
     <link rel="stylesheet" href="public\css\menu.css">
-    <link rel="stylesheet" href="public\css\login.css">
+    <link rel="stylesheet" href="public/css/product.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/blog.css">
+    <link href="public\css\main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
+    <style>
+        .social-share-wrap {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            margin-right: 10px;
+            color: #777;
+            /* Màu sắc cho tiêu đề "Share" */
+        }
+
+        .social-share {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-share li {
+            margin-right: 10px;
+        }
+
+        .social-share a {
+            text-decoration: none;
+            color: #777;
+            /* Màu sắc cho biểu tượng chia sẻ */
+        }
+
+        .social-share a:hover {
+            color: #dec18c;
+            /* Màu sắc khi di chuột qua biểu tượng chia sẻ */
+
+        }
+
+        .social-share i {
+            font-size: 24px;
+        }
+
+        .menu-footer-information-container ul.menu li {
+            margin-bottom: 0;
+            /* Điều chỉnh giảm khoảng cách giữa các mục */
+        }
+        .margin-bottom-0{
+            margin-bottom :0 !important;
+        }
+    </style>
+
+
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="header-top d-none d-lg-flex d-xl-flex ">
-              <div class="language-currency ">
-                <div class="language dropdown">
-                  <a href="#" class="dropdown-toggle">English </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Français</a></li>
-                    <li><a href="#">Deutsch</a></li>
-                    <li><a href="#">Tiếng Việt</a></li>
-                  </ul>
-                </div>
-                <div class="currency dropdown">
-                  <a href="#" class="dropdown-toggle">USD </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">USD</a></li>
-                    <li><a href="#">EUR</a></li>
-                    <li><a href="#">VND</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="ts-menu ">
-                <div class="text-widget">Welcome to Handmade Shop</div>
-                <div class="nav-menu">
-                  <a href="login.html" class="my-account">My Account</a>
-                  <a href="/whishlist.html" class="wishlist">Wishlist</a>
-                  <a href="/blog.html" class="blog">Blog</a>
-                  <a href="/login.html" class="login">Login</a>
-                </div>
-              </div>
-            </div>
-    
-            <div class="header-bottom">
-              <div class="row">
-                <div class="bottom-menu-left col-2">
-                  <div class="logo d-none d-lg-block">
-                    <a href="#">
-                      <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png" alt="logo day ne">
-                    </a>
-                  </div>
-    
-                </div>
-                <div class="bottom-menu-center col-7">
-                  <div class="logo-mobile d-lg-none">
-                    <a href="#" class="logo-mobile">
-                      <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png" alt="logo day ne">
-                    </a>
-                  </div>
-    
-                  <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-main" type="submit">Search</button>
-                        </form>
-                      </div>
+<body style="background-color: #fff;">
+    <div class="container" style="background-color: #fff;">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header-top d-none d-lg-flex d-xl-flex ">
+                    <div class="language-currency ">
+                        <div class="language dropdown">
+                            <a href="#" class="dropdown-toggle">English </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">Tiếng Việt</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency dropdown">
+                            <a href="#" class="dropdown-toggle">USD </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">EUR</a></li>
+                                <li><a href="#">VND</a></li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
-                </div>
-                <div class="bottom-menu-right col-3 navbar">
-                  <div class="cart dropdown">
-                    <a class="nav-link color-main dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                      <i class="bi bi-cart-fill"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li>
-                        <div class="row text-start px-3">
-                          <div class="col-3">
-                            <a href="#">
-                              <img width="70" height="70"
-                                src="public\images\product-15-300x300.jpg"
-                                alt="">
-                            </a>
-                          </div>
-                          <div class="col-7 text-center d-flex align-items-center justify-content-start">
-                            <a href="#" class="product-info">
-                              <div class="product-name fw-bold f-12 ">
-                                YELLOW PILLOW
-                              </div>
-                              <div class="product-price fw-bold f-12 color-second">
-                                1 × $40.00
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-2 d-flex align-items-center justify-content-start">
-                            <a href="#"><i class="bi bi-x-circle"></i></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row text-start px-3">
-                          <div class="col-3">
-                            <a href="#">
-                              <img width="70" height="70"
-                                src="public\images\product-21-300x300.jpg"
-                                alt="">
-                            </a>
-                          </div>
-                          <div class="col-7 text-center d-flex align-items-center justify-content-start">
-                            <a href="#" class="product-info">
-                              <div class="product-name fw-bold f-12">
-                                YELLOW PILLOW
-                              </div>
-                              <div class="product-price fw-bold f-12 color-second">
-                                1 × $40.00
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-2 d-flex align-items-center justify-content-start">
-                            <a href="#"><i class="bi bi-x-circle"></i></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row text-start px-3">
-                          <div class="col-3">
-                            <a href="#">
-                              <img width="70" height="70"
-                                src="public\images\product-17-300x300.jpg"
-                                alt="">
-                            </a>
-                          </div>
-                          <div class="col-7 text-center d-flex align-items-center justify-content-start">
-                            <a href="#" class="product-info">
-                              <div class="product-name fw-bold f-12">
-                                YELLOW PILLOW
-                              </div>
-                              <div class="product-price fw-bold f-12 color-second">
-                                1 × $40.00
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-2 d-flex align-items-center justify-content-start">
-                            <a href="#"><i class="bi bi-x-circle"></i></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class ="border-top d-flex justify-content-between px-4 py-3">
-                        <div class ="total">
-                          Total
-                        </div>
-                        <div class ="price">
-                          $105.00
-                        </div>
-                      </li>
-                      <li class ="border-top d-flex justify-content-between px-3 py-3">
-                        <button class="view-cart cart-li-button border-0">
-                          <a href="cart.html" class="text-light">View Cart</a>
-                        </button>
-                        <button class="checkout cart-li-button text-light border-0">
-                          <a href="checkout.html" class="text-light">Checkout</a>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="twitter">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </div>
-                  <div class="facebook">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                  </div>
-                  <div class="vimeo">
-                    <a href="#"><i class="fab fa-vimeo"></i></a>
-                  </div>
-                  <div class="pinterest">
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mobileheader bg-dark d-flex">
-              <nav class="navbar navbar-expand-lg bg-dark d-lg-none">
-                <div class="container">
-                  <button class="toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              <div class="icon ms-auto d-lg-none">
-                <div class="icon-mobile">
-                  <a href="#">
-                    <i class="fas fa-search"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fas fa-shopping-cart"></i>
-                  </a>
-    
-                </div>
-              </div>
-            </div>
-          </header>
-        <div class="page-title-inner block-center">
-            <img width=100% height="281" src="public\images\banner-31.jpg">
-            <div class="block-center-inner font-display">
-                <h1>Birthday Gifts Grouped</h1>
-            </div>
-        </div>
-        <div class="breadcrumbs py-3 border-bottom">
-            <div class="home">
-                <li>
-                    <a href="/home.html">Home</a><i class="fas fa-angle-right"></i>
-                </li>
-            </div>
-            <div class="product">
-                <li>
-                    Birthday Gifts Grouped
-                </li>
-            </div>
-        </div>
-        <div class="product-showcase">
-            <div class="row">
-                <div class="col-md-6">
-                    <div id="main-product">
-                        <!-- Thêm thẻ img để hiển thị hình ảnh lớn -->
-                        <img id="largeImage" src="/public/images/product-18-570x570.jpg" alt="Sản phẩm Ví dụ"
-                            class="img-fluid">
-                    </div>
-                    <div id="thumbnail-container">
-                        <!-- Thay đổi các đường dẫn hình ảnh thumbnail -->
-                        <div class="thumbnail" onclick="changeImage('/public/images/product-18-570x570.jpg')">
-                            <img src="/public/images/product-18-300x300.jpg" alt="Thumbnail 1" class="img-fluid">
-                        </div>
-                        <div class="thumbnail" onclick="changeImage('/public/images/product-19.jpg')">
-                            <img src="/public/images/product-19-300x300.jpg" alt="Thumbnail 2" class="img-fluid">
-                        </div>
-                        <div class="thumbnail" onclick="changeImage('/public/images/product-02.jpg')">
-                            <img src="/public/images/product-02-150x150.jpg" alt="Thumbnail 3" class="img-fluid">
-                        </div>
-                        <div class="thumbnail" onclick="changeImage('/public/images/banner-5.fw_.png')">
-                            <img src="/public/images/product-17-300x300.jpg" alt="Thumbnail 4" class="img-fluid">
+                    <div class="ts-menu d-flex align-items-center">
+                        <div class="text-widget">Welcome to Handmade Shop</div>
+                        <div class="nav-menu">
+                            <a href="login.html" class="my-account">My Account</a>
+                            <a href="/whishlist.html" class="wishlist">Wishlist</a>
+                            <a href="/blog.html" class="blog">Blog</a>
+                            <a href="/login.html" class="login">Login</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div>
-                        <div class="summary-product-wrap">
-                            <div class="summary-product entry-summary">
-                                <h1 itemprop="name" class="product_title entry-title p-font">Birthday Gifts Grouped</h1>
-                                <p class="price">
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
-                                        35.00
-                                    </span>
-                                </p>
-                                <div class="product-single-short-description" itemprop="description">
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                        turpis
-                                        egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                                        ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                                        est.
-                                        Mauris placerat eleifend leo 2.</p>
-                                </div>
-                                <div class="container text-center">
-                                    <div class="row  row-cols-lg-3 g-2 g-lg-3">
-                                        <div class="col" style="background: #fafafa ;flex: 0 0 20%;">
-                                            <div>
-                                                <td class="woocommerce-grouped-product-list-item__quantity">
-                                                    <div class="quantity">
-                                                        <div class="quantity-inner">
-                                                            <button class="btn-number" data-type="minus"
-                                                                style="background-color:#fafafa; border: none; font-size: 20px; padding-right: 1px;">
-                                                                <i class="pe-7s-less"></i>
-                                                            </button>
-                                                            <input type="text" step="1" min="0" name="quantity[1555]"
-                                                                value="0" title="Qty" class="input-text qty text"
-                                                                size="4"
-                                                                style="background-color: #fafafa; padding: 2px;">
-                                                            <button class="btn-number" data-type="plus"
-                                                                style="background-color:#fafafa; border: none; font-size: 20px; padding-left: 1px;">
-                                                                <i class="pe-7s-plus"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-left">
-                                                <td class="woocommerce-grouped-product-list-item__label">
-                                                    <label for="product-1555">
-                                                        <a
-                                                            href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower
-                                                            Bending</a>
-                                                    </label>
-                                                </td>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div style="text-align: left;">
-                                                <td class="woocommerce-grouped-product-list-item__price">
-                                                    <span class="woocommerce-Price-amount amount"
-                                                        style="font-size: 15px;">
-                                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                        35.00
-                                                    </span>
-                                                </td>
-                                            </div>
-                                        </div>
+
+                <div class="header-bottom">
+                    <div class="row">
+                        <div class="bottom-menu-left col-2">
+                            <div class="logo d-none d-lg-block">
+                                <a href="#">
+                                    <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                        alt="logo day ne">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="bottom-menu-center col-7">
+                            <div class="logo-mobile d-lg-none">
+                                <a href="#" class="logo-mobile">
+                                    <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                        alt="logo day ne">
+                                </a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
+                                <div class="container-fluid align-items-center">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Pages</a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Blog</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Features</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Shop</a>
+                                            </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2 margin-bottom-0" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-main" type="submit">Search</button>
+                                        </form>
                                     </div>
-                                    <div style="margin-top: 20px">
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="bottom-menu-right col-3 navbar">
+                            <div class="cart dropdown">
+                                <a class="nav-link color-main dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-cart-fill"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                      <div class="row text-start px-3">
+                                        <div class="col-3">
+                                          <a href="#">
+                                            <img width="70" height="70"
+                                              src="public\images\product-15-300x300.jpg"
+                                              alt="">
+                                          </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                          <a href="#" class="product-info">
+                                            <div class="product-name fw-bold f-12 ">
+                                              YELLOW PILLOW
+                                            </div>
+                                            <div class="product-price fw-bold f-12 color-second text-start">
+                                              1 × $40.00
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                          <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="row text-start px-3">
+                                        <div class="col-3">
+                                          <a href="#">
+                                            <img width="70" height="70"
+                                              src="public\images\product-21-300x300.jpg"
+                                              alt="">
+                                          </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                          <a href="#" class="product-info">
+                                            <div class="product-name fw-bold f-12">
+                                              KNIT FROM WOOL BRACELET
+                                            </div>
+                                            <div class="product-price fw-bold f-12 color-second text-start">
+                                              1 × $30.00
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                          <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="row text-start px-3">
+                                        <div class="col-3">
+                                          <a href="#">
+                                            <img width="70" height="70"
+                                              src="public\images\product-17-300x300.jpg"
+                                              alt="">
+                                          </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                          <a href="#" class="product-info">
+                                            <div class="product-name fw-bold f-12">
+                                              FLOWER BENDING
+                                            </div>
+                                            <div class="product-price fw-bold f-12 color-second text-start">
+                                              1 × $35.00
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                          <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class ="border-top d-flex justify-content-between px-4 py-3">
+                                      <div class ="total">
+                                        Total
+                                      </div>
+                                      <div class ="price">
+                                        $105.00
+                                      </div>
+                                    </li>
+                                    <li class ="border-top d-flex justify-content-between px-3 py-3">
+                                      <button class="view-cart cart-li-button border-0">
+                                        <a href="cart.html" class="text-light">View Cart</a>
+                                      </button>
+                                      <button class="checkout cart-li-button text-light border-0">
+                                        <a href="checkout.html" class="text-light">Checkout</a>
+                                      </button>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="twitter">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="facebook">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="vimeo">
+                                <a href="#"><i class="fab fa-vimeo"></i></a>
+                            </div>
+                            <div class="pinterest">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobileheader bg-dark d-flex">
+                    <nav class="navbar navbar-expand-lg bg-dark d-lg-none">
+                        <div class="container">
+                            <button class="toggler-icon" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Shop</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="icon ms-auto d-lg-none">
+                        <div class="icon-mobile">
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="product-showcase">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="main-product">
+                            <!-- Thêm thẻ img để hiển thị hình ảnh lớn -->
+                            <img id="largeImage" src="/public/images/product-18-570x570.jpg" alt="Sản phẩm Ví dụ"
+                                class="img-fluid">
+                        </div>
+                        <div id="thumbnail-container">
+                            <!-- Thay đổi các đường dẫn hình ảnh thumbnail -->
+                            <div class="thumbnail" onclick="changeImage('/public/images/product-18-570x570.jpg')">
+                                <img src="/public/images/product-18-300x300.jpg" alt="Thumbnail 1" class="img-fluid">
+                            </div>
+                            <div class="thumbnail" onclick="changeImage('/public/images/product-19.jpg')">
+                                <img src="/public/images/product-19-300x300.jpg" alt="Thumbnail 2" class="img-fluid">
+                            </div>
+                            <div class="thumbnail" onclick="changeImage('/public/images/product-02.jpg')">
+                                <img src="/public/images/product-02-150x150.jpg" alt="Thumbnail 3" class="img-fluid">
+                            </div>
+                            <div class="thumbnail" onclick="changeImage('/public/images/banner-5.fw_.png')">
+                                <img src="/public/images/product-17-300x300.jpg" alt="Thumbnail 4" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <div class="summary-product-wrap">
+                                <div class="summary-product entry-summary">
+                                    <h1 itemprop="name" class="product_title entry-title p-font">Birthday Gifts Grouped
+                                    </h1>
+                                    <p class="price">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                            35.00
+                                        </span>
+                                    </p>
+                                    <div class="product-single-short-description" itemprop="description">
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                            turpis
+                                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                            amet,
+                                            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
+                                            vitae
+                                            est.
+                                            Mauris placerat eleifend leo 2.</p>
+                                    </div>
+                                    <div class="container text-center">
                                         <div class="row  row-cols-lg-3 g-2 g-lg-3">
-                                            <div class="col-" style="background: #fafafa; flex: 0 0 20%;">
+                                            <div class="col" style="background: #fafafa ;flex: 0 0 30%;">
                                                 <div>
                                                     <td class="woocommerce-grouped-product-list-item__quantity">
                                                         <div class="quantity">
                                                             <div class="quantity-inner">
                                                                 <button class="btn-number" data-type="minus"
                                                                     style="background-color:#fafafa; border: none; font-size: 20px; padding-right: 1px;">
-                                                                    <i class="pe-7s-less"></i>
+                                                                    <i class="bi bi-dash-circle" style="color:#777"></i>
                                                                 </button>
                                                                 <input type="text" step="1" min="0"
                                                                     name="quantity[1555]" value="0" title="Qty"
@@ -382,7 +379,7 @@
                                                                     style="background-color: #fafafa; padding: 2px;">
                                                                 <button class="btn-number" data-type="plus"
                                                                     style="background-color:#fafafa; border: none; font-size: 20px; padding-left: 1px;">
-                                                                    <i class="pe-7s-plus"></i>
+                                                                    <i class="bi bi-plus-circle" style="color:#777"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -390,39 +387,92 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <div class="text-left">
+                                                <div>
                                                     <td class="woocommerce-grouped-product-list-item__label">
-                                                        <label for="product-1546">
+                                                        <label for="product-1555"
+                                                            style="display: block; text-align: left;">
                                                             <a
-                                                                href="https://themes.g5plus.net/handmade/product/birthday-greeting-cards/">Birthday
-                                                                Greeting Cards</a>
+                                                                href="https://themes.g5plus.net/handmade/product/flower-bending/">Flower
+                                                                Bending</a>
                                                         </label>
                                                     </td>
                                                 </div>
                                             </div>
+
                                             <div class="col">
                                                 <div style="text-align: left;">
                                                     <td class="woocommerce-grouped-product-list-item__price">
-                                                        <del>
-                                                            <span class="woocommerce-Price-amount amount"
-                                                                style="font-size: 15px;">
-                                                                <span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                                40.00
-                                                            </span>
-                                                        </del>
-                                                        <ins>
-                                                            <span class="woocommerce-Price-amount amount"
-                                                                style="font-size: 15px;">
-                                                                <span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>
-                                                                35.00
-                                                            </span>
-                                                        </ins>
+                                                        <span class="woocommerce-Price-amount amount"
+                                                            style="font-size: 15px;">
+                                                            <span class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                            35.00
+                                                        </span>
                                                     </td>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="margin-top: 20px">
+                                            <div class="row row-cols-lg-3 g-2 g-lg-3">
+                                                <div class="col" style="background: #fafafa; flex: 0 0 30%;">
+                                                    <div>
+                                                        <td class="woocommerce-grouped-product-list-item__quantity">
+                                                            <div class="quantity">
+                                                                <div class="quantity-inner">
+                                                                    <button class="btn-number" data-type="minus"
+                                                                        style="background-color:#fafafa; border: none; font-size: 20px; padding-right: 1px;">
+                                                                        <i class="bi bi-dash-circle"
+                                                                            style="color:#777"></i>
+                                                                    </button>
+                                                                    <input type="text" step="1" min="0"
+                                                                        name="quantity[1555]" value="0" title="Qty"
+                                                                        class="input-text qty text" size="4"
+                                                                        style="background-color: #fafafa; padding: 2px;">
+                                                                    <button class="btn-number" data-type="plus"
+                                                                        style="background-color:#fafafa; border: none; font-size: 20px; padding-left: 1px;">
+                                                                        <i class="bi bi-plus-circle"
+                                                                            style="color:#777"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="text-left">
+                                                        <td class="woocommerce-grouped-product-list-item__label">
+                                                            <label for="product-1546" style="text-align: left;">
+                                                                <a
+                                                                    href="https://themes.g5plus.net/handmade/product/birthday-greeting-cards/">Birthday
+                                                                    Greeting Cards</a>
+                                                            </label>
+                                                        </td>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div style="text-align: left;">
+                                                        <td class="woocommerce-grouped-product-list-item__price">
+                                                            <del>
+                                                                <span class="woocommerce-Price-amount amount"
+                                                                    style="font-size: 15px;">
+                                                                    <span
+                                                                        class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                                    40.00
+                                                                </span>
+                                                            </del>
+                                                            <ins>
+                                                                <span class="woocommerce-Price-amount amount"
+                                                                    style="font-size: 15px;">
+                                                                    <span
+                                                                        class="woocommerce-Price-currencySymbol">&#36;</span>
+                                                                    35.00
+                                                                </span>
+                                                            </ins>
+                                                        </td>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div style="text-align: left;margin-top: 35px;">
                                             <input type="hidden" name="add-to-cart" value="2239">
                                             <button type="submit" class="single_add_to_cart_button button alt"
@@ -442,14 +492,14 @@
                                                 data-original-product-id="2239"
                                                 class="add_to_wishlist single_add_to_wishlist"
                                                 data-title="Add to Wishlist" style="font-size: 16px;">
-                                                <i class="fa-regular fa-heart"></i><span>Add to Wishlist</span>
+                                                <i class="bi bi-suit-heart-fill"></i><span>Add to Wishlist</span>
                                             </a>
                                         </div>
                                     </div>
                                     <a title="Compare"
                                         href="https://themes.g5plus.net/handmade/product/birthday-gifts-products/?action=yith-woocompare-add-product&amp;id=2239"
                                         class="compare" data-product_id="2239" style="font-size: 16px;">
-                                        <i class="fa fa-exchange"></i>
+                                        <i class="bi bi-arrow-left-right"></i>
                                         Compare
                                     </a>
                                 </div>
@@ -482,86 +532,788 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="social-share-wrap" style="margin-top: 30px;">
-                                <label>Share:</label>
-                                <ul class="social-share">
-                                    <li>
+                            <div class="social-share-wrap"
+                                style="margin-top: 30px; display: flex; align-items: center;">
+                                <label style="margin-right: 10px;">Share:</label>
+                                <ul class="social-share"
+                                    style="list-style: none; display: flex; margin: 0; padding: 0;">
+                                    <li style="margin-right: 10px;">
                                         <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthemes.g5plus.net%2Fhandmade%2Fproduct%2Fbirthday-gifts-products%2F"
                                             target="_blank" rel="nofollow">
-                                            <i class="fa fa-facebook"></i>
+                                            <i class="bi bi-facebook"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="margin-right: 10px;">
                                         <a href="javascript: window.open('http://twitter.com/share?text=Birthday Gifts Grouped&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/','_blank', 'width=900, height=450');"
                                             rel="nofollow">
-                                            <i class="fa fa-twitter"></i>
+                                            <i class="bi bi-twitter"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="margin-right: 10px;">
                                         <a href="javascript: window.open('http://www.linkedin.com/shareArticle?mini=true&url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&title=Birthday Gifts Grouped','_blank', 'width=500, height=450');"
                                             rel="nofollow">
-                                            <i class="fa fa-linkedin"></i>
+                                            <i class="bi bi-linkedin"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="margin-right: 10px;">
                                         <a href="javascript: window.open('http://www.tumblr.com/share/link?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&name=Birthday Gifts Grouped','_blank', 'width=500, height=450');"
                                             rel="nofollow">
-                                            <i class="fa fa-tumblr"></i>
+                                            <i class="bi bi-align-top"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="javascript: window.open('http://pinterest.com/pin/create/button/?url=https://themes.g5plus.net/handmade/product/birthday-gifts-products/&media=https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg&description=Birthday Gifts Grouped','_blank', 'width=900, height=450');"
                                             rel="nofollow">
-                                            <i class="fa fa-pinterest"></i>
+                                            <i class="bi bi-pinterest"></i>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="container overflow-hidden text-start border-top"
                     style="margin-top: 70px;padding-top: 50px;">
-                    <div class="row gx-5">
-                        <div class="col-3">
-                            <div class="m-3 p-3">
-                                <div class="container text-center border">
-                                    <div class="row align-items-start">
-                                        <div class="col-12 ">
-                                            <li class="description_tab border-bottom" id="tab-title-description"
-                                                role="tab" aria-controls="tab-description" style="text-align: left;">
-                                                <a href="#tab-description">Description</a>
+                    <div class="woocommerce-tabs wc-tabs-wrapper">
+                        <div class="container overflow-hidden text-center">
+                            <div class="row gx-5">
+                                <div class="col-3">
+                                    <div class="m-1 p-3 border">
+                                        <ul class="tabs wc-tabs" role="tablist">
+                                            <li class="description_tab" id="tab-title-description" role="tab"
+                                                aria-controls="tab-description"
+                                                style="list-style: none;text-align: left;">
+                                                <a href="#tab-description">Description </a>
                                             </li>
-                                        </div>
-                                        <div class="col-12">
                                             <li class="reviews_tab" id="tab-title-reviews" role="tab"
-                                                aria-controls="tab-reviews" style="text-align: left;">
-                                                <a href="#tab-reviews">Reviews (0)</a>
+                                                aria-controls="tab-reviews" style="list-style: none;text-align: left;">
+                                                <a href="#tab-reviews">Reviews (0) </a>
                                             </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="p-3">
+                                        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab"
+                                            id="tab-description" role="tabpanel"
+                                            aria-labelledby="tab-title-description">
+                                            <h2 style="text-align: left;font-size: 40px;">Description</h2>
+                                            <p style="text-align: left;">Pellentesque habitant morbi tristique senectus
+                                                et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                                                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                                                sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                                                placerat eleifend leo.</p>
+                                        </div>
+                                        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
+                                            id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+                                            <div id="reviews" class="woocommerce-Reviews">
+                                                <div id="comments">
+                                                    <h2 class="woocommerce-Reviews-title"
+                                                        style="text-align: left;font-size: 40px;">Reviews</h2>
+                                                    <p class="woocommerce-noreviews" style="text-align: left;">There are
+                                                        no reviews yet.</p>
+                                                </div>
+                                                <div id="review_form_wrapper">
+                                                    <div id="review_form">
+                                                        <div id="respond" class="comment-respond">
+                                                            <span id="reply-title" class="comment-reply-title">
+                                                                Be the first to review &ldquo;Birthday Gifts Grouped
+                                                                &rdquo;
+                                                                <small>
+                                                                    <a rel="nofollow" id="cancel-comment-reply-link"
+                                                                        href="/handmade/product/birthday-gifts-products/#respond"
+                                                                        style="display:none;">Cancel reply</a>
+                                                                </small>
+                                                            </span>
+                                                            <p class="must-log-in">
+                                                                You must be <a
+                                                                    href="https://themes.g5plus.net/handmade/my-account/">logged
+                                                                    in</a>
+                                                                to post a review.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-9">
-                            <div class="container p-4">
-                                <div>
-                                    <div class="row align-items-start">
-                                        <div class="col-12 ">
-                                            <li class="description_tab border-bottom " id="tab-title-description"
-                                                role="tab" aria-controls="tab-description"
-                                                style="text-align: left;text-decoration: none; list-style: none; padding-bottom: 10px;">
-                                                <a href="#tab-description"
-                                                    style="font-size: 25px;color:#000;">Description</a>
-                                            </li>
-                                        </div>
-                                        <div class="col-12" style="font-size: 14px; color: #777; margin-top: 20px;">
-                                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                                            ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-                                            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                            ultricies mi vitae est. Mauris placerat eleifend leo.
 
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                // Lấy ra tab "Description" và "Reviews"
+                                var descriptionTab = document.getElementById('tab-description');
+                                var reviewsTab = document.getElementById('tab-reviews');
+
+                                // Ẩn mặc định cả hai tab khi trang web tải lên
+                                descriptionTab.style.display = 'none';
+                                reviewsTab.style.display = 'none';
+
+                                // Thêm sự kiện click cho tab "Description"
+                                document.getElementById('tab-title-description').addEventListener('click', function () {
+                                    descriptionTab.style.display = 'block';
+                                    reviewsTab.style.display = 'none';
+                                });
+
+                                // Thêm sự kiện click cho tab "Reviews"
+                                document.getElementById('tab-title-reviews').addEventListener('click', function () {
+                                    reviewsTab.style.display = 'block';
+                                    descriptionTab.style.display = 'none';
+                                });
+                            });
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="new-arrival-1">
+                <div class="row justify-content-between align-items-center border-bottom border-warning">
+                    <div class="col-8">
+                        <h1>
+                            <div class="display-5">
+                                New Arrivals
+                            </div>
+                        </h1>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="navbar-collapse" id="navbarNav">
+                            <ul class=" nav navbar-nav flex-row justify-content-between ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="nav-birthday-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-birthday-gift" aria-controls="nav-birthday" role="tab"
+                                        aria-selected="true">Birthday Gifts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="nav-personal-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-personal" aria-controls="nav-personal" role="tab"
+                                        aria-selected="false">Personal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="nav-special-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-special" aria-controls="nav-special" role="tab"
+                                        aria-selected="false">Special</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-birthday" role="tabpanel" aria-labelledby="nav-birthday-tab">
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <img src="/public/images/product-18-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
                                         </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="/public/images/product-15-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">12.5%</span>
+                                        </div>
+                                        <img src="public\images\product-14-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <img src="public\images\product-13-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <img src="public\images\product-12-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">25%</span>
+                                        </div>
+                                        <img src="public\images\product-21-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>30.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-hot product-flash">HOT</span>
+                                            <span class="on-sold product-flash">SOLD</span>
+                                        </div>
+                                        <img src="public\images\product-08-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                            -
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="public\images\product-17-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="nav-personal" role="tabpanel"
+                        aria-labelledby="nav-personal-tab">
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-12-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-04-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="public\images\product-14-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-08-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border ">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">12.5%</span>
+                                        </div>
+                                        <img src="public\images\product-19-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-03-300x300.jpg" alt="product-01" class="img-fluid">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-01-300x300.jpg" alt="product-01" class="img-fluid ">
+                                        <img src="public\images\product-02.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-11-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-09-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">25%</span>
+                                        </div>
+                                        <img src="public\images\product-13-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-06-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>30.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-hot product-flash">HOT</span>
+                                            <span class="on-sold product-flash">SOLD</span>
+                                        </div>
+                                        <img src="public\images\product-17-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-18-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                            -
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="public\images\product-18-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-15-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-special" role="tabpanel" aria-labelledby="nav-special-tab">
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-04-300x300.jpg" alt="product-01" class="img-fluid">
+                                        <img src="public\images\product-12-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="public\images\product-08-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-14-300x300.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border ">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">12.5%</span>
+                                        </div>
+                                        <img src="public\images\product-19-300x300.jpg" alt="product-01" class="img-fluid ">
+                                        <img src="public\images\product-03-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>35.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-01-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-02.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-center align-items-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-3 py-3">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <img src="public\images\product-11-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-09-300x300.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-sale product-flash">25%</span>
+                                        </div>
+                                        <img src="public\images\product-13-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-06-300x300.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <del class="text-black">
+                                                <span class="Price-amount discount-price px-1">
+                                                    <span class="Price-currencySymbol ">$</span>40.00
+                                                </span>
+                                            </del>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>30.00
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-hot product-flash">HOT</span>
+                                            <span class="on-sold product-flash">SOLD</span>
+                                        </div>
+                                        <img src="public\images\product-17-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-18-300x300.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                            -
+                                            <span>
+                                                <ins class="text-decoration-none px-1">
+                                                    <span class="Price-amount price">
+                                                        <span class="Price-currencySymbol">$</span>35.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-2 py-2">
+                                <div class="border">
+                                    <div class="thumb box-hover">
+                                        <div class="product-flash-wrap">
+                                            <span class="on-new product-flash">New</span>
+                                        </div>
+                                        <img src="public\images\product-18-300x300.jpg" alt="product-01"
+                                            class="img-fluid img-change">
+                                        <img src="public\images\product-15-300x300.jpg" alt="product-01" class="img-fluid ">
+                                    </div>
+                                    <div class="product-info p-4">
+                                        <div class="product-name p-font p-size">
+                                            <a href="#" class="text-decoration-none text-black">Birthday Gifts Groups</a>
+                                        </div>
+                                        <span>
+                                            <ins class="text-decoration-none px-1">
+                                                <span class="Price-amount price">
+                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                </span>
+                                            </ins>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -569,272 +1321,269 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function changeImage(newImageSrc) {
-            var mainImage = document.getElementById('largeImage');
-            mainImage.style.transform = 'scale(1.2)';
-            setTimeout(function () {
-                mainImage.src = newImageSrc;
-                mainImage.alt = 'Sản phẩm Ví dụ';
-                mainImage.style.transform = 'scale(1)';
-            }, 300);
-        }
-    </script>
-</body>
-<footer class="main-footer-wrapper light">
-    <div id="wrapper-footer">
-        <div class="main-footer">
-            <div class="footer_inner clearfix">
-                <div class="footer-top-bar-wrapper">
-                    <div class="footer-top-bar-inner">
-                        <div class="full">
-                            <div class=" sidebar">
-                                <aside id="handmade-partner-carousel-4" class="widget widget-partner-carousel">
-                                    <div class="container-fluid">
-                                        <div class="footer-top-bar-wrapper">
-                                            <div class="text-center">
-                                                <div class="row m-3 p-5 overflow-auto">
-                                                    <div class="col-12 col-md-4 col-lg-2">
-                                                        <a href="#" title="Partner 1">
-                                                            <img src="/public/images/partner-1.jpg" alt="Partner 1"
-                                                                class="img-fluid" width="150px">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 col-md-4 col-lg-2">
-                                                        <a href="#" title="Partner 2">
-                                                            <img src="/public/images/partner-2.jpg" alt="Partner 2"
-                                                                class="img-fluid" width="110px">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 col-md-4 col-lg-2">
-                                                        <a href="#" title="Partner 3">
-                                                            <img src="/public/images/partner-3.jpg" alt="Partner 3"
-                                                                class="img-fluid" width="110px">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 col-md-4 col-lg-2">
-                                                        <a href="#" title="Partner 4">
-                                                            <img src="/public/images/partner-4.jpg" alt="Partner 4"
-                                                                class="img-fluid" width="150px">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 col-md-4 col-lg-2">
-                                                        <a href="#" title="Partner 5">
-                                                            <img src="/public/images/partner-5.jpg" alt="Partner 5"
-                                                                class="img-fluid" width="110px">
-                                                        </a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="map scroll">
-                                                <div class=" text-center main" id="section1">
-                                                    <div class="row alight-iteam-center">
-                                                        <div class="col text-end  border-end khoi p-4">
-                                                            <a href="#" id="scrollToSection2"><span> <i
-                                                                        class="fas fa-location-dot"></i> SEE
-                                                                    MAP</span></a>
+            <footer class="main-footer-wrapper light">
+                <div id="wrapper-footer">
+                    <div class="main-footer">
+                        <div class="footer_inner clearfix">
+                            <div class="footer-top-bar-wrapper">
+                                <div class="footer-top-bar-inner">
+                                    <div class="full">
+                                        <div class=" sidebar">
+                                            <aside id="handmade-partner-carousel-4" class="widget widget-partner-carousel">
+                                                <div class="container-fluid">
+                                                    <div class="footer-top-bar-wrapper">
+                                                        <div class="text-center">
+                                                            <div class="row m-3 p-5 overflow-auto">
+                                                                <div class="col-12 col-md-4 col-lg-2">
+                                                                    <a href="#" title="Partner 1">
+                                                                        <img src="/public/images/partner-1.jpg"
+                                                                            alt="Partner 1" class="img-fluid" width="150px">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12 col-md-4 col-lg-2">
+                                                                    <a href="#" title="Partner 2">
+                                                                        <img src="/public/images/partner-2.jpg"
+                                                                            alt="Partner 2" class="img-fluid" width="110px">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12 col-md-4 col-lg-2">
+                                                                    <a href="#" title="Partner 3">
+                                                                        <img src="/public/images/partner-3.jpg"
+                                                                            alt="Partner 3" class="img-fluid" width="110px">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12 col-md-4 col-lg-2">
+                                                                    <a href="#" title="Partner 4">
+                                                                        <img src="/public/images/partner-4.jpg"
+                                                                            alt="Partner 4" class="img-fluid" width="150px">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12 col-md-4 col-lg-2">
+                                                                    <a href="#" title="Partner 5">
+                                                                        <img src="/public/images/partner-5.jpg"
+                                                                            alt="Partner 5" class="img-fluid" width="110px">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="col text-start border-start khoi p-4">
-                                                            <span> <i class="fa-solid fa-circle-arrow-up "></i><a
-                                                                    href="#"></a> SCROLL UP</span>
+                                                        <div class="map scroll">
+                                                            <div class=" text-center main" id="section1">
+                                                                <div class="row alight-iteam-center">
+                                                                    <div class="col text-end  border-end khoi p-3">
+                                                                        <a href="#" id="scrollToSection2"><span> <i
+                                                                                    class="fas fa-location-dot"></i> SEE
+                                                                                MAP</span></a>
+                                                                    </div>
+                                                                    <div class="col text-start border-start khoi p-4">
+                                                                        <span> <i
+                                                                                class="fa-solid fa-circle-arrow-up "></i><a
+                                                                                href="#"></a> SCROLL UP</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="main" id="section2">
+                                                                <h2>. </h2>
+                                                                <!-- Content of Section 2 goes here -->
+                                                                <a href="#section1"></a>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            document.getElementById('scrollToSection2').addEventListener('click', function (event) {
+                                                                event.preventDefault();
+    
+                                                                // Hiển thị Section 2
+                                                                document.getElementById('section2').style.display = 'block';
+    
+                                                                // Cuộn mượt xuống Section 2
+                                                                document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+                                                            });
+                                                        </script>
+    
+                                                        <div class="container text-center">
+                                                            <div class="row  row-cols-lg-4 g-2 g-lg-3">
+                                                                <div class="col">
+                                                                    <div class="p-3">
+                                                                        <div class="footer-logo" style="text-align: left;">
+                                                                            <a href="#">
+                                                                                <img class="footer-logo-img"
+                                                                                    src="/public/images/logo.png">
+                                                                            </a>
+                                                                            <div class="text-logo"
+                                                                                style="text-align: left;">
+                                                                                Letterpress, gold foil stamping, and more.
+                                                                                Quality, sustainable materials like thick
+                                                                                100% PCW paper
+                                                                                and veg-based inks.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="p-3">
+                                                                        <h2 class="widget-title m-4"
+                                                                            style="text-align: left;">
+                                                                            Information
+                                                                        </h2>
+                                                                        <div class="menu-footer-information-container">
+                                                                            <ul id="menu-footer-information" class="menu">
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">About Us</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Delivery Information</a>
+                                                                                </li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Privacy policy</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Terms & Conditions</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Contact Us</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="p-3">
+                                                                        <h2 class="widget-title m-4"
+                                                                            style="text-align: left;">
+                                                                            Extras
+                                                                        </h2>
+                                                                        <div class="menu-footer-information-container">
+                                                                            <ul id="menu-footer-information" class="menu">
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Brands</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Gift Vouchers</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Affiliates</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Specials</a></li>
+                                                                                <li style="text-align: left;"><a
+                                                                                        href="#">Site Map</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="p-3">
+                                                                        <h4 class="widget-title m-4"
+                                                                            style="text-align: left;">
+                                                                            Contact us
+                                                                        </h4>
+                                                                        <div class="text-widge">
+                                                                            <ul class="footer-contact-us">
+                                                                                <li><i class="fa fa-map-marker p-color"></i>
+                                                                                    <span> Great Store London Oxford Street,
+                                                                                        012 United
+                                                                                        Kingdom</span>
+                                                                                </li>
+                                                                                <li><i class="fa fa-envelope p-color"></i>
+                                                                                    <span>emailgreatstore@gmail.com </span>
+                                                                                </li>
+                                                                                <li><i class="fa fa-phone p-color"></i>
+                                                                                    <span>(+92) 3456 7890</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-bar-wrapper light">
+                                                            <div class="bottom-bar-inner">
+                                                                <div class="container-fluid border-top">
+                                                                    <div class="row p-5">
+                                                                        <div class="col-md-6 sidebar text-left">
+                                                                            <aside id="text-3"
+                                                                                class="copyright margin-top-10 widget widget_text">
+                                                                                <div class="textwidget">
+                                                                                    <div>© Copyright 2015. Powered by
+                                                                                        WordPress.
+                                                                                    </div>
+                                                                                    <div>Theme made by G5Theme</div>
+                                                                                </div>
+                                                                            </aside>
+                                                                        </div>
+                                                                        <div class="col-md-6 sidebar text-right">
+                                                                            <aside id="handmade-payment-gate-2"
+                                                                                class="widget widget-payment-gate">
+                                                                                <ul class="payment-gate">
+                                                                                    <li style="list-style: none;">
+                                                                                        <a target="_blank"
+                                                                                            href="http://www.mastercard.com"
+                                                                                            title="Master card">
+                                                                                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/master_card.jpg"
+                                                                                                alt="Master card" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li style="list-style: none;">
+                                                                                        <a target=" _blank
+                                                                                        href="http://www.visa.com"
+                                                                                        title="Visa">
+                                                                                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/visa.jpg"
+                                                                                            alt="Visa" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li style="list-style: none;">
+                                                                                        <a target=" _blank
+                                                                                        href="https://www.paypal.com"
+                                                                                        title="Paypal">
+                                                                                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg"
+                                                                                            alt="Paypal" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li style="list-style: none;">
+                                                                                        <a href="https://www.americanexpress.com/" title="American Express">
+                                                                                        <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
+                                                                                            alt="American Express" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li style="list-style: none;">
+                                                                                        <a target="_blank"
+                                                                                            href="https://www.westernunion.com"
+                                                                                            title="Weston Union">
+                                                                                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/weston_union.jpg"
+                                                                                                alt="Weston Union" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </aside>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <div class="main" id="section2">
                                                     <h2>. </h2>
                                                     <!-- Content of Section 2 goes here -->
                                                     <a href="#section1"></a>
                                                 </div>
-                                            </div>
-                                            <script>
-                                                document.getElementById('scrollToSection2').addEventListener('click', function (event) {
-                                                    event.preventDefault();
-
-                                                    // Hiển thị Section 2
-                                                    document.getElementById('section2').style.display = 'block';
-
-                                                    // Cuộn mượt xuống Section 2
-                                                    document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
-                                                });
-                                            </script>
-                                            <div class="text-start">
-                                                <div class="row align-items-center m-3 p-5">
-                                                    <div class="col">
-                                                        <div class="footer-logo">
-                                                            <a href="#">
-                                                                <img class="footer-logo-img"
-                                                                    src="/public/images/logo.png">
-                                                            </a>
-                                                            <div class="text-logo">
-                                                                Letterpress, gold foil stamping, and more. Quality,
-                                                                sustainable materials like thick 100% PCW paper
-                                                                and
-                                                                veg-based inks.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="widget widget_nav_menu p-5">
-                                                            <h2 class="widget-title m-4">
-                                                                Information
-                                                            </h2>
-                                                            <div class="menu-footer-information-container">
-                                                                <ul id="menu-footer-information" class="menu">
-                                                                    <li>
-                                                                        <a href="#">About Us</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delivery Information</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Privacy policy</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Terms & Conditions</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Contact Us</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="widget widget_nav_menu p-5">
-                                                            <h2 class="widget-title m-4">
-                                                                Extras
-                                                            </h2>
-                                                            <div class="menu-footer-information-container">
-                                                                <ul id="menu-footer-information" class="menu">
-                                                                    <li>
-                                                                        <a href="#">Brands</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Gift Vouchers</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Affiliates</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Specials</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Site Map</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="widget-title-s-font widget widget_text">
-                                                            <h4 class="widget-title m-4">
-                                                                Contact us
-                                                            </h4>
-                                                            <div class="text-widge">
-                                                                <ul class="footer-contact-us">
-                                                                    <li>
-                                                                        <i class="fa fa-map-marker p-color"></i>
-                                                                        <span> Great Store London Oxford Street, 012
-                                                                            United Kingdom</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="fa fa-envelope p-color"></i>
-                                                                        <span>emailgreatstore@gmail.com </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="fa fa-phone p-color"></i>
-                                                                        <span>(+92) 3456 7890</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="bottom-bar-wrapper light">
-                                                <div class="bottom-bar-inner">
-                                                    <div class="container-fluid border-top">
-                                                        <div class="row p-5">
-                                                            <div class="col-md-6 sidebar text-left">
-                                                                <aside id="text-3"
-                                                                    class="copyright margin-top-10 widget widget_text">
-                                                                    <div class="textwidget">
-                                                                        <div>© Copyright 2015. Powered by WordPress.
-                                                                        </div>
-                                                                        <div>Theme made by G5Theme</div>
-                                                                    </div>
-                                                                </aside>
-                                                            </div>
-                                                            <div class="col-md-6 sidebar text-right">
-                                                                <aside id="handmade-payment-gate-2"
-                                                                    class="widget widget-payment-gate">
-                                                                    <ul class="payment-gate">
-                                                                        <li>
-                                                                            <a target="_blank"
-                                                                                href="http://www.mastercard.com"
-                                                                                title="Master card">
-                                                                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/master_card.jpg"
-                                                                                    alt="Master card" />
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a target="_blank"
-                                                                                href="http://www.visa.com" title="Visa">
-                                                                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/visa.jpg"
-                                                                                    alt="Visa" />
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a target="_blank"
-                                                                                href="https://www.paypal.com"
-                                                                                title="Paypal">
-                                                                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg"
-                                                                                    alt="Paypal" />
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a target="_blank"
-                                                                                href="https://www.americanexpress.com/"
-                                                                                title="American Express">
-                                                                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
-                                                                                    alt="American Express" />
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a target="_blank"
-                                                                                href="https://www.westernunion.com"
-                                                                                title="Weston Union">
-                                                                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/weston_union.jpg"
-                                                                                    alt="Weston Union" />
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </aside>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                            </aside>
                                         </div>
                                     </div>
-
-                                    <div class="main" id="section2">
-                                        <h2>. </h2>
-                                        <!-- Content of Section 2 goes here -->
-                                        <a href="#section1"></a>
-                                    </div>
+                                </div>
                             </div>
                         </div>
-</footer>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            function changeImage(newImageSrc) {
+                var mainImage = document.getElementById('largeImage');
+                mainImage.style.transform = 'scale(1.2)';
+                setTimeout(function () {
+                    mainImage.src = newImageSrc;
+                    mainImage.alt = 'Sản phẩm Ví dụ';
+                    mainImage.style.transform = 'scale(1)';
+                }, 300);
+            }
+        </script>
+    </div>
+</body>
 
 </html>

@@ -217,3 +217,14 @@
     margin-bottom: 50px;
     padding-bottom: 30px;
 }
+
+.btn-outline-main {
+    color:#fff !important;
+    border-color: #dec18c !important;
+    background-color: #dec18c !important;
+}
+
+.btn-outline-main:hover {
+    background-color: #999 !important;
+    border-color: #999 !important;
+}

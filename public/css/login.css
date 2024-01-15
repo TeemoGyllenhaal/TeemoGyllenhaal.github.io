@@ -127,7 +127,6 @@
 
 .header-bottom {
     font-family: "Varela Round";
-    display: flex;
 }
 
 .header-bottom .bomttom-menu-left>ul {
@@ -153,15 +152,10 @@
 
 .header-bottom {
     font-family: "Varela Round";
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-bottom a {
-    text-decoration: none;
-    color: #878787;
-}
 
 .header-bottom a:hover {
     color: #dec18c;
@@ -217,6 +211,7 @@
     margin-bottom: 50px;
     padding-bottom: 30px;
 }
+
 
 .home,
 .account {

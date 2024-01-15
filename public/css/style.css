@@ -1,3 +1,15 @@
+.font-main {
+    font-family: "Varela Round";
+}
+
+.font-display {
+    font-family: "Playfair Display" !important;
+}
+
+.font-normal th {
+    font-weight: normal;
+}
+
 .border-color {
     border-color: #eeee;
     border-width: 3px;
@@ -9,9 +21,6 @@
     position: relative;
 }
 
-.p-font {
-    font-family: Verdana;
-}
 
 .p-size {
     font-size: 15px;
@@ -69,7 +78,10 @@
 }
 
 
-
+.banner_1 {
+    position: relative;
+    padding-bottom: 5px;
+}
 
 .banner_2 {
     position: relative;
@@ -95,14 +107,14 @@
     left: 13px;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .right-container {
     right: 30px;
     position: absolute;
     max-width: 320px;
-    padding: 45px 35px;
+    padding: 30px 35px;
     background-color: #fff;
     top: 30px;
     bottom: 30px;
@@ -176,11 +188,25 @@
     padding-right: 25px !important;
 }
 
+.centered-btn_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 .centered-btn:hover {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 7px;
     padding-right: 20px;
+    background-color: #6c757d !important;
+    transition: all 0.3s;
+    /* Thêm hiệu ứng chuyển động */
+    border-color: #6c757d !important;
+}
+.centered-btn_1:hover {
     background-color: #6c757d !important;
     transition: all 0.3s;
     /* Thêm hiệu ứng chuyển động */
@@ -289,6 +315,7 @@
 
 .handmade-banner.style1.content-center .content-middle-inner {
     text-align: center;
+    width: 300px;
 }
 
 .content-middle-inner {
@@ -304,7 +331,9 @@
 .bg-img {
     height: 270px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .overlay-banner {
@@ -327,12 +356,14 @@ content-middle-inner {
 .new-arrival-1 {
     margin-top: 40px;
 }
+
 .box-hover {
     height: auto;
     overflow: hidden;
     position: relative;
     max-width: 100%;
 }
+
 .box-hover img {
     max-width: 100%;
     transition: all 1s;
@@ -344,6 +375,16 @@ content-middle-inner {
     right: 0;
     opacity: 1;
 }
+
 .box-hover:hover .img-change {
     opacity: 0;
+}
+
+.bg_img btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Đảm bảo nút hiển thị trên cùng */
 }

@@ -260,3 +260,13 @@
 .color-second{
     color:#878787;
 }
+.cart-li-button {
+    padding: 12px;
+    min-width: 140px;
+    background-color: #414141;
+    border-radius: 0;
+}
+
+.cart-li-button:hover {
+    background-color: #dec18c;
+}

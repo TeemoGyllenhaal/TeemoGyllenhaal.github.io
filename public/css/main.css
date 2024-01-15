@@ -222,3 +222,19 @@
 .icon-mobile i{
     color: #dec18c;
 }
+
+.font-main {
+    font-family: "Varela Round";
+}
+
+.font-display {
+    font-family: "Playfair Display" !important;
+}
+
+.font-normal th {
+    font-weight: normal;
+}
+
+.entry-title{
+    color: black !important;
+}

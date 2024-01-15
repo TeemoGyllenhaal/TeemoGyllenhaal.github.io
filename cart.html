@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="public\css\footer.css">
     <link rel="stylesheet" href="public\css\cart.css">
     <link rel="stylesheet" href="public\css\menu.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -44,7 +46,7 @@
                     <div class="text-widget">Welcome to Handmade Shop</div>
                     <div class="nav-menu">
                         <a href="login.html" class="my-account">My Account</a>
-                        <a href="wishlist.html" class="wishlist">Wishlist</a>
+                        <a href="/whishlist.html" class="wishlist">Wishlist</a>
                         <a href="/blog.html" class="blog">Blog</a>
                         <a href="/login.html" class="login">Login</a>
                     </div>
@@ -52,72 +54,165 @@
             </div>
 
             <div class="header-bottom">
-                <div class="bottom-menu-left">
-                    <div class="logo d-none d-lg-block">
-                        <a href="#">
-                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
-                                alt="logo day ne">
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="bottom-menu-center">
-                    <div class="logo-mobile d-lg-none">
-                        <a href="#" class="logo-mobile">
-                            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
-                                alt="logo day ne">
-                        </a>
-                    </div>
-
-                    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Pages</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Shop</a>
-                                    </li>
-                                </ul>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-main" type="submit">Search</button>
-                                </form>
-                            </div>
+                <div class="row">
+                    <div class="bottom-menu-left col-2">
+                        <div class="logo d-none d-lg-block">
+                            <a href="#">
+                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                    alt="logo day ne">
+                            </a>
                         </div>
-                    </nav>
-                </div>
 
-                <div class="bottom-menu-right d-none d-lg-flex d-xl-flex">
-                    <div class="twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
-                    <div class="facebook">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="bottom-menu-center col-7">
+                        <div class="logo-mobile d-lg-none">
+                            <a href="#" class="logo-mobile">
+                                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                                    alt="logo day ne">
+                            </a>
+                        </div>
+
+                        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex d-xl-flex">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Pages</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-main" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="vimeo">
-                        <a href="#"><i class="fab fa-vimeo"></i></a>
-                    </div>
-                    <div class="pinterest">
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <div class="bottom-menu-right col-3 navbar">
+                        <div class="cart dropdown">
+                            <a class="nav-link color-main dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <div class="row text-start px-3">
+                                        <div class="col-3">
+                                            <a href="#">
+                                                <img width="70" height="70" src="public\images\product-15-300x300.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                            <a href="#" class="product-info">
+                                                <div class="product-name fw-bold f-12 ">
+                                                    YELLOW PILLOW
+                                                </div>
+                                                <div class="product-price fw-bold f-12 color-second">
+                                                    1 × $40.00
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                            <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row text-start px-3">
+                                        <div class="col-3">
+                                            <a href="#">
+                                                <img width="70" height="70" src="public\images\product-21-300x300.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                            <a href="#" class="product-info">
+                                                <div class="product-name fw-bold f-12">
+                                                    YELLOW PILLOW
+                                                </div>
+                                                <div class="product-price fw-bold f-12 color-second">
+                                                    1 × $40.00
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                            <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row text-start px-3">
+                                        <div class="col-3">
+                                            <a href="#">
+                                                <img width="70" height="70" src="public\images\product-17-300x300.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-7 text-center d-flex align-items-center justify-content-start">
+                                            <a href="#" class="product-info">
+                                                <div class="product-name fw-bold f-12">
+                                                    YELLOW PILLOW
+                                                </div>
+                                                <div class="product-price fw-bold f-12 color-second">
+                                                    1 × $40.00
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-start">
+                                            <a href="#"><i class="bi bi-x-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="border-top d-flex justify-content-between px-4 py-3">
+                                    <div class="total">
+                                        Total
+                                    </div>
+                                    <div class="price">
+                                        $105.00
+                                    </div>
+                                </li>
+                                <li class="border-top d-flex justify-content-between px-3 py-3">
+                                    <button class="view-cart cart-li-button border-0">
+                                        <a href="cart.html" class="text-light">View Cart</a>
+                                    </button>
+                                    <button class="checkout cart-li-button text-light border-0">
+                                        <a href="checkout.html" class="text-light">Checkout</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="twitter">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="vimeo">
+                            <a href="#"><i class="fab fa-vimeo"></i></a>
+                        </div>
+                        <div class="pinterest">
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,7 +256,6 @@
                     </div>
                 </div>
             </div>
-
         </header>
         <div class="page-title-inner block-center">
             <img width=100% height="281" src="public\images\banner-31.jpg">
@@ -176,7 +270,7 @@
                 </li>
             </div>
             <div class="cart">
-                <li >
+                <li>
                     Cart
                 </li>
             </div>
@@ -199,8 +293,7 @@
                         </th>
                         <td class="product-info align-middle">
                             <div class="product-img d-flex flex-row align-items-center">
-                                <img width="70" height="70"
-                                    src="public\images\product-15-300x300.jpg">
+                                <img width="70" height="70" src="public\images\product-15-300x300.jpg">
                                 <div class="product-name ps-5">
                                     Yellow Pillow
                                 </div>
@@ -217,8 +310,8 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
-                                        size="5">
+                                    <input type="text" step="1" min="0" value="1"
+                                        class="border border-0 main-bg input-text text text-center" size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
@@ -235,8 +328,7 @@
                         </th>
                         <td class="product-info align-middle">
                             <div class="product-img d-flex flex-row align-items-center">
-                                <img width="70" height="70"
-                                    src="public\images\banner-5.fw_.png">
+                                <img width="70" height="70" src="public\images\banner-5.fw_.png">
                                 <div class="product-name ps-5">
                                     Flower Bending
                                 </div>
@@ -253,8 +345,8 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
-                                        size="5">
+                                    <input type="text" step="1" min="0" value="1"
+                                        class="border border-0 main-bg input-text text text-center" size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
@@ -271,8 +363,7 @@
                         </th>
                         <td class="product-info align-middle">
                             <div class="product-img d-flex flex-row align-items-center">
-                                <img width="70" height="70"
-                                    src="public\images\product-21-300x300.jpg">
+                                <img width="70" height="70" src="public\images\product-21-300x300.jpg">
                                 <div class="product-name ps-5">
                                     Knit From Wool Bracelets
                                 </div>
@@ -289,8 +380,8 @@
                                     <button class="btn-number text-bg-light" data-type="minus" style=" border: none">
                                         <i class="bi bi-dash-circle"></i>
                                     </button>
-                                    <input type="text" step="1" min="0" value="1" class="border border-0 main-bg input-text text text-center"
-                                        size="5">
+                                    <input type="text" step="1" min="0" value="1"
+                                        class="border border-0 main-bg input-text text text-center" size="5">
                                     <button class="btn-number text-bg-light" data-type="plus" style=" border: none">
                                         <i class="bi bi-plus-circle"></i>
                                     </button>
@@ -367,13 +458,15 @@
                                     <th>Shipping</th>
                                     <td>
                                         <div class="form-check mb-1">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1" checked>
                                             <label class="form-check-label" for="gridRadios1">
                                                 Flat rate: $10.00
                                             </label>
                                         </div>
                                         <div class="form-check mb-1">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1" checked>
                                             <label class="form-check-label" for="gridRadios1">
                                                 Free shipping
                                             </label>
@@ -600,6 +693,7 @@
                                                                             </li>
                                                                             <li style="list-style: none;>
                                                                                 <a target=" _blank
+
                                                                                 href="https://www.paypal.com"
                                                                                 title="Paypal">
                                                                                 <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg"
@@ -608,6 +702,7 @@
                                                                             </li>
                                                                             <li style="list-style: none;>
                                                                                 <a target=" _blank
+
                                                                                 href="https://www.americanexpress.com/"
                                                                                 title="American Express">
                                                                                 <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
@@ -647,3 +742,4 @@
     </footer>
 </body>
 </html>
+

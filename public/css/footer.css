@@ -3,7 +3,6 @@
         font-family: playfair display;  /* Sử dụng font chữ Arial hoặc font chữ sans-serif nếu Arial không khả dụng */
         line-height: 1.6;  /* Thiết lập chiều cao của dòng chữ */
         margin: 0;  /* Xóa margin mặc định của trình duyệt */
-        background-color: #f8f9fa;  /* Đặt màu nền cho trang */
     }
     /* Thêm CSS tùy chỉnh cho biểu tượng nếu cần thiết */
     .p-color {

@@ -16,28 +16,6 @@
     margin: 0;
 }
 
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #878787;
-    transition: color 0.2s ease;
-}
-
-.dropdown-menu li a:hover {
-    color: #dec18c;
-}
-
-.dropdown-toggle {
-    color: #878787;
-    transition: color 0.2s ease;
-    text-decoration: none;
-}
-
-.dropdown-toggle:hover {
-    color: #dec18c;
-}
-
-
 .language .dropdown-menu,
 .currency .dropdown-menu {
     position: absolute;
@@ -53,7 +31,8 @@
 }
 
 .language .dropdown-menu li,
-.currency .dropdown-menu li {
+.currency .dropdown-menu li,
+.cart .dropdown-menu li {
     display: block;
     margin-bottom: 10px;
     text-align: center;
@@ -147,7 +126,6 @@
 
 .header-bottom {
     font-family: "Varela Round";
-    display: flex;
     justify-content: space-between;
 }
 
@@ -159,10 +137,7 @@
 }
 
 
-.header-bottom a {
-    text-decoration: none;
-    color: #878787;
-}
+
 
 .header-bottom a:hover {
     color: #dec18c;
@@ -269,4 +244,19 @@
 
 .entry-title{
     color: black !important;
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+.color-main{
+    color: #dec18c !important;
+}
+.dropdown-menu{
+    width: 350px;
+}
+.f-12{
+    font-size: 12px;
+}
+.color-second{
+    color:#878787;
 }

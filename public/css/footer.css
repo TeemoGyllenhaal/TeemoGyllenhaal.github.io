@@ -223,7 +223,7 @@
   #section2 {
     display: none;
     /* Đặt hình nền cho Section 2 */
-    background-image: url('/public/images/download\ \(5\).jpg');
+    background-image: url('/public/images/map.jpg');
     background-size: cover;
     /* Điều chỉnh dựa trên nhu cầu cụ thể của bạn */
     background-repeat: no-repeat;
